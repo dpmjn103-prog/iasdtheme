@@ -1,0 +1,80 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+	"version": 2,
+	"settings": {
+		"appearanceTools": true,
+		"layout": {
+			"contentSize": "760px",
+			"wideSize": "1160px"
+		},
+		"color": {
+			"palette": [
+				{
+					"slug": "forest",
+					"color": "#176b55",
+					"name": "Verde bosque"
+				},
+				{
+					"slug": "deep-forest",
+					"color": "#104c3d",
+					"name": "Verde profundo"
+				},
+				{
+					"slug": "gold",
+					"color": "#e8b65c",
+					"name": "Dorado"
+				},
+				{
+					"slug": "ink",
+					"color": "#1d2b27",
+					"name": "Tinta"
+				},
+				{
+					"slug": "paper",
+					"color": "#fbfaf6",
+					"name": "Marfil"
+				},
+				{
+					"slug": "white",
+					"color": "#ffffff",
+					"name": "Blanco"
+				}
+			]
+		},
+		"typography": {
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"fontFamily": "Georgia, \"Times New Roman\", serif",
+					"name": "Serif editorial",
+					"slug": "editorial"
+				},
+				{
+					"fontFamily": "\"Segoe UI\", \"Helvetica Neue\", sans-serif",
+					"name": "Sans serif",
+					"slug": "sans"
+				}
+			]
+		},
+		"spacing": {
+			"units": [ "px", "rem", "%", "vw" ]
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "#fbfaf6",
+			"text": "#1d2b27"
+		},
+		"typography": {
+			"fontFamily": "\"Segoe UI\", \"Helvetica Neue\", sans-serif",
+			"lineHeight": "1.7"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "#104c3d"
+				}
+			}
+		}
+	}
+}
