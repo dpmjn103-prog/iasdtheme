@@ -52,15 +52,9 @@
 		<details class="sanctuary-scriptures">
 			<summary><?php esc_html_e( 'Citas bíblicas · Reina-Valera 1960', 'centro-estudios-iasd' ); ?></summary>
 			<div class="sanctuary-scriptures__content">
-				<blockquote>
-					<cite><?php esc_html_e( 'Daniel 8:14 · RVR1960', 'centro-estudios-iasd' ); ?></cite>
-				</blockquote>
-				<blockquote>
-					<cite><?php esc_html_e( 'Hebreos 4:14–16 · RVR1960', 'centro-estudios-iasd' ); ?></cite>
-				</blockquote>
-				<blockquote>
-					<cite><?php esc_html_e( 'Hebreos 8:1–2 · RVR1960', 'centro-estudios-iasd' ); ?></cite>
-				</blockquote>
+				<p><?php esc_html_e( 'Daniel 8:14 · Reina-Valera 1960', 'centro-estudios-iasd' ); ?></p>
+				<p><?php esc_html_e( 'Hebreos 4:14–16 · Reina-Valera 1960', 'centro-estudios-iasd' ); ?></p>
+				<p><?php esc_html_e( 'Hebreos 8:1–2 · Reina-Valera 1960', 'centro-estudios-iasd' ); ?></p>
 			</div>
 		</details>
 	</div>
