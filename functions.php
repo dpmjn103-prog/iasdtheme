@@ -175,7 +175,7 @@ function centro_estudios_iasd_default( $setting ) {
 		'announcement_color'    => '#ffffff',
 		'announcement_speed'    => 18,
 		'announcement_font_size'=> 14,
-		'hero_image'            => '',
+		'hero_image'            => 'https://lavozdelremanente.org/wp-content/uploads/2026/11/hero.jpg',
 		'hero_eyebrow'          => __( 'Fe, comunidad y aprendizaje', 'centro-estudios-iasd' ),
 		'hero_title'            => __( 'Un espacio para crecer en la Palabra.', 'centro-estudios-iasd' ),
 		'hero_description'     => __( 'Estudiamos la Biblia, fortalecemos nuestra fe y compartimos esperanza en comunidad.', 'centro-estudios-iasd' ),
