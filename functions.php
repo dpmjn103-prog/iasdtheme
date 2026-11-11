@@ -94,7 +94,7 @@ function centro_estudios_iasd_default( $setting ) {
 	$defaults = array(
 		'announcement_enabled'  => false,
 		'announcement_text'     => __( 'Aviso importante: consulta aquí las novedades del Centro de Estudios.', 'centro-estudios-iasd' ),
-		'announcement_bg'       => '#173e35',
+		'announcement_bg'       => '#003b63',
 		'announcement_color'    => '#ffffff',
 		'announcement_speed'    => 18,
 		'announcement_font_size'=> 14,
@@ -427,7 +427,7 @@ function centro_estudios_iasd_customizer_css() {
 	?>
 	<style id="centro-estudios-iasd-customizer-css">
 		.announcement {
-			--announcement-bg: <?php echo esc_html( $background ? $background : '#173e35' ); ?>;
+			--announcement-bg: <?php echo esc_html( $background ? $background : '#003b63' ); ?>;
 			--announcement-color: <?php echo esc_html( $text ? $text : '#ffffff' ); ?>;
 			--announcement-speed: <?php echo esc_html( (string) $speed ); ?>s;
 			--announcement-font-size: <?php echo esc_html( (string) $font_size ); ?>px;

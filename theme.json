@@ -11,13 +11,13 @@
 			"palette": [
 				{
 					"slug": "forest",
-					"color": "#176b55",
-					"name": "Verde bosque"
+					"color": "#0067a5",
+					"name": "Azul institucional"
 				},
 				{
 					"slug": "deep-forest",
-					"color": "#104c3d",
-					"name": "Verde profundo"
+					"color": "#00446b",
+					"name": "Azul profundo"
 				},
 				{
 					"slug": "gold",
@@ -72,7 +72,7 @@
 		"elements": {
 			"link": {
 				"color": {
-					"text": "#104c3d"
+					"text": "#00446b"
 				}
 			}
 		}

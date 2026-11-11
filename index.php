@@ -6,38 +6,75 @@
  */
 
 get_header();
+$welcome_logo_id = get_theme_mod( 'custom_logo' );
 ?>
-<main id="site-content" class="page-content page-content--wide">
-	<header class="content-intro">
-		<p class="eyebrow"><?php esc_html_e( 'Centro de Estudios IASD', 'centro-estudios-iasd' ); ?></p>
-		<h1 class="archive-title"><?php esc_html_e( 'Reflexiones y recursos', 'centro-estudios-iasd' ); ?></h1>
-	</header>
-	<?php if ( have_posts() ) : ?>
-		<div class="post-grid">
-			<?php while ( have_posts() ) : ?>
-				<?php the_post(); ?>
-				<article <?php post_class( 'post-card' ); ?>>
-					<?php if ( has_post_thumbnail() ) : ?>
-						<a class="post-card__image" href="<?php the_permalink(); ?>" tabindex="-1" aria-hidden="true"><?php the_post_thumbnail( 'medium_large' ); ?></a>
-					<?php endif; ?>
-					<div class="post-card__body">
-						<p class="post-meta"><?php echo esc_html( get_the_date() ); ?></p>
-						<h2 class="post-card__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-						<p class="post-card__excerpt"><?php echo esc_html( wp_trim_words( get_the_excerpt(), 24 ) ); ?></p>
-						<a class="read-more" href="<?php the_permalink(); ?>"><?php esc_html_e( 'Leer más', 'centro-estudios-iasd' ); ?><span class="screen-reader-text">: <?php the_title(); ?></span></a>
-					</div>
-				</article>
-			<?php endwhile; ?>
+<main id="site-content" class="index-page">
+	<div class="welcome-screen" aria-hidden="true">
+		<div class="welcome-screen__content">
+			<?php if ( $welcome_logo_id ) : ?>
+				<?php echo wp_get_attachment_image( $welcome_logo_id, 'full', false, array( 'class' => 'welcome-screen__logo', 'alt' => '' ) ); ?>
+			<?php else : ?>
+				<span class="welcome-screen__fallback"><?php esc_html_e( 'Iglesia Adventista del Séptimo Día', 'centro-estudios-iasd' ); ?></span>
+			<?php endif; ?>
+			<p class="welcome-screen__greeting"><?php esc_html_e( 'Bienvenidos', 'centro-estudios-iasd' ); ?></p>
 		</div>
-		<nav class="pagination" aria-label="<?php esc_attr_e( 'Paginación', 'centro-estudios-iasd' ); ?>">
-			<?php the_posts_pagination(); ?>
-		</nav>
-	<?php else : ?>
-		<div class="no-results">
-			<h2><?php esc_html_e( 'Todavía no hay publicaciones', 'centro-estudios-iasd' ); ?></h2>
-			<p><?php esc_html_e( 'Cuando se publiquen nuevos recursos, aparecerán aquí.', 'centro-estudios-iasd' ); ?></p>
+	</div>
+	<section class="hero" aria-labelledby="hero-title">
+		<div class="hero__content">
+			<p class="hero__eyebrow"><?php echo esc_html( get_theme_mod( 'hero_eyebrow', centro_estudios_iasd_default( 'hero_eyebrow' ) ) ); ?></p>
+			<h1 id="hero-title"><?php echo esc_html( get_theme_mod( 'hero_title', centro_estudios_iasd_default( 'hero_title' ) ) ); ?></h1>
+			<p class="hero__description"><?php echo esc_html( get_theme_mod( 'hero_description', centro_estudios_iasd_default( 'hero_description' ) ) ); ?></p>
+			<div class="hero__actions">
+				<?php
+				$visit_text  = get_theme_mod( 'cta_visit_text', centro_estudios_iasd_default( 'cta_visit_text' ) );
+				$visit_style = centro_estudios_iasd_sanitize_button_style( get_theme_mod( 'cta_visit_style', centro_estudios_iasd_default( 'cta_visit_style' ) ) );
+				if ( $visit_text ) :
+					?>
+					<a class="button button--<?php echo esc_attr( $visit_style ); ?>" href="<?php echo centro_estudios_iasd_cta_url( 'cta_visit_url' ); ?>"><?php echo esc_html( $visit_text ); ?></a>
+				<?php endif; ?>
+				<?php
+				$study_text  = get_theme_mod( 'cta_study_text', centro_estudios_iasd_default( 'cta_study_text' ) );
+				$study_style = centro_estudios_iasd_sanitize_button_style( get_theme_mod( 'cta_study_style', centro_estudios_iasd_default( 'cta_study_style' ) ) );
+				if ( $study_text ) :
+					?>
+					<a class="button button--<?php echo esc_attr( $study_style ); ?>" href="<?php echo centro_estudios_iasd_cta_url( 'cta_study_url' ); ?>"><?php echo esc_html( $study_text ); ?></a>
+				<?php endif; ?>
+			</div>
 		</div>
-	<?php endif; ?>
+	</section>
+
+	<section class="page-content page-content--wide" aria-labelledby="index-title">
+		<header class="content-intro">
+			<p class="eyebrow"><?php esc_html_e( 'Centro de Estudios IASD', 'centro-estudios-iasd' ); ?></p>
+			<h2 class="archive-title" id="index-title"><?php esc_html_e( 'Reflexiones y recursos', 'centro-estudios-iasd' ); ?></h2>
+		</header>
+		<?php if ( have_posts() ) : ?>
+			<div class="post-grid">
+				<?php while ( have_posts() ) : ?>
+					<?php the_post(); ?>
+					<article <?php post_class( 'post-card' ); ?>>
+						<?php if ( has_post_thumbnail() ) : ?>
+							<a class="post-card__image" href="<?php the_permalink(); ?>" tabindex="-1" aria-hidden="true"><?php the_post_thumbnail( 'medium_large' ); ?></a>
+						<?php endif; ?>
+						<div class="post-card__body">
+							<p class="post-meta"><?php echo esc_html( get_the_date() ); ?></p>
+							<h3 class="post-card__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+							<p class="post-card__excerpt"><?php echo esc_html( wp_trim_words( get_the_excerpt(), 24 ) ); ?></p>
+							<a class="read-more" href="<?php the_permalink(); ?>"><?php esc_html_e( 'Leer más', 'centro-estudios-iasd' ); ?><span class="screen-reader-text">: <?php the_title(); ?></span></a>
+						</div>
+					</article>
+				<?php endwhile; ?>
+			</div>
+			<nav class="pagination" aria-label="<?php esc_attr_e( 'Paginación', 'centro-estudios-iasd' ); ?>">
+				<?php the_posts_pagination(); ?>
+			</nav>
+		<?php else : ?>
+			<div class="no-results">
+				<h2><?php esc_html_e( 'Todavía no hay publicaciones', 'centro-estudios-iasd' ); ?></h2>
+				<p><?php esc_html_e( 'Cuando se publiquen nuevos recursos, aparecerán aquí.', 'centro-estudios-iasd' ); ?></p>
+			</div>
+		<?php endif; ?>
+	</section>
 </main>
 <?php
 get_footer();
