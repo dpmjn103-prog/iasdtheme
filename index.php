@@ -44,6 +44,7 @@ $welcome_logo_id = get_theme_mod( 'custom_logo' );
 	</section>
 
 	<?php get_template_part( 'template-parts/philosophy' ); ?>
+	<?php get_template_part( 'template-parts/study-method' ); ?>
 	<?php get_template_part( 'template-parts/saturday-program' ); ?>
 	<?php get_template_part( 'template-parts/community-updates' ); ?>
 

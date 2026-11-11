@@ -480,6 +480,9 @@ function centro_estudios_iasd_cta_url( $setting ) {
 	if ( ! $url && 'cta_visit_url' === $setting ) {
 		return esc_url( home_url( '/#ubicacion' ) );
 	}
+	if ( ! $url && 'cta_study_url' === $setting ) {
+		return esc_url( home_url( '/#metodo-estudio' ) );
+	}
 
 	return $url ? esc_url( $url ) : esc_url( home_url( '/' ) );
 }
