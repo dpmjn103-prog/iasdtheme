@@ -36,6 +36,7 @@ get_header();
 	<?php get_template_part( 'template-parts/study-method' ); ?>
 	<?php get_template_part( 'template-parts/saturday-program' ); ?>
 	<?php get_template_part( 'template-parts/community-updates' ); ?>
+	<?php get_template_part( 'template-parts/orion-decoration' ); ?>
 
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : ?>
