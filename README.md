@@ -10,7 +10,7 @@ Tema de WordPress adaptable y accesible para presentar el Centro de Estudios IAS
 
 ## Personalización
 
-- **Identidad del sitio:** carga el logo en **Apariencia → Personalizar → Identidad del sitio**.
+- **Identidad del sitio:** el encabezado muestra el logo IASD incluido en `assets/images/iasd-logo.jpeg`. El logo de WordPress configurado en **Apariencia → Personalizar → Identidad del sitio** se conserva para la bienvenida animada.
 - **Anuncio superior:** activa o desactiva el banner y ajusta texto, colores, velocidad y tamaño.
 - **Portada y botones:** configura la imagen, títulos, descripciones, etiquetas, enlaces y estilos de los dos CTA.
 - **Filosofía:** la sección con los valores de aprendizaje participativo se edita en `template-parts/philosophy.php`.

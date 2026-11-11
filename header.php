@@ -28,17 +28,18 @@
 	<header class="site-header">
 		<div class="header-inner">
 			<div class="site-branding">
-				<?php if ( has_custom_logo() ) : ?>
-					<?php the_custom_logo(); ?>
+				<a class="site-branding__logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<img
+						class="site-branding__logo-image"
+						src="<?php echo esc_url( get_theme_file_uri( '/assets/images/iasd-logo.jpeg' ) ); ?>"
+						alt=""
+						width="64"
+						height="64"
+						fetchpriority="high"
+						decoding="async"
+					>
 					<span class="screen-reader-text"><?php bloginfo( 'name' ); ?></span>
-				<?php else : ?>
-					<a class="site-branding__text" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<span class="site-title"><?php bloginfo( 'name' ); ?></span>
-						<?php if ( get_bloginfo( 'description' ) ) : ?>
-							<span class="site-description"><?php bloginfo( 'description' ); ?></span>
-						<?php endif; ?>
-					</a>
-				<?php endif; ?>
+				</a>
 			</div>
 
 			<button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false">

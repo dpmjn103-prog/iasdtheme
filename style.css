@@ -164,15 +164,30 @@ button,
 	text-decoration: none;
 }
 
-.custom-logo-link {
+.site-branding__logo {
+	display: block;
+	width: 3.75rem;
+	height: 3.75rem;
 	flex: 0 0 auto;
+	overflow: hidden;
+	border: 2px solid rgba(193, 139, 50, 0.6);
+	border-radius: 50%;
+	background: #061b38;
+	box-shadow: 0 3px 12px rgba(0, 40, 70, 0.18);
+	transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
-.custom-logo {
-	width: auto;
-	max-width: 190px;
-	max-height: 54px;
-	object-fit: contain;
+.site-branding__logo:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 5px 16px rgba(0, 40, 70, 0.24);
+}
+
+.site-branding__logo-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
 }
 
 .site-branding__text {
@@ -2018,9 +2033,9 @@ button,
 		display: none;
 	}
 
-	.custom-logo {
-		max-width: 145px;
-		max-height: 46px;
+	.site-branding__logo {
+		width: 3rem;
+		height: 3rem;
 	}
 
 	.site-title {
