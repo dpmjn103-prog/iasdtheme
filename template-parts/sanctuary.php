@@ -50,16 +50,16 @@
 		</aside>
 
 		<details class="sanctuary-scriptures">
-			<summary><?php esc_html_e( 'Citas bíblicas · RVR1960', 'centro-estudios-iasd' ); ?></summary>
+			<summary><?php esc_html_e( 'Citas bíblicas', 'centro-estudios-iasd' ); ?></summary>
 			<div class="sanctuary-scriptures__content">
 				<blockquote>
-					<cite><?php esc_html_e( 'Daniel 8:14 · RVR1960', 'centro-estudios-iasd' ); ?></cite>
+					<cite><?php esc_html_e( 'Daniel 8:14', 'centro-estudios-iasd' ); ?></cite>
 				</blockquote>
 				<blockquote>
-					<cite><?php esc_html_e( 'Hebreos 4:14–16 · RVR1960', 'centro-estudios-iasd' ); ?></cite>
+					<cite><?php esc_html_e( 'Hebreos 4:14–16', 'centro-estudios-iasd' ); ?></cite>
 				</blockquote>
 				<blockquote>
-					<cite><?php esc_html_e( 'Hebreos 8:1–2 · RVR1960', 'centro-estudios-iasd' ); ?></cite>
+					<cite><?php esc_html_e( 'Hebreos 8:1–2', 'centro-estudios-iasd' ); ?></cite>
 				</blockquote>
 			</div>
 		</details>
