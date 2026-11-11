@@ -85,6 +85,33 @@ function centro_estudios_iasd_enqueue_assets() {
 add_action( 'wp_enqueue_scripts', 'centro_estudios_iasd_enqueue_assets' );
 
 /**
+ * Exclude WordPress's untouched sample post from the posts page.
+ *
+ * @param WP_Query $query Main query.
+ */
+function centro_estudios_iasd_exclude_sample_post( $query ) {
+	if ( is_admin() || ! $query->is_main_query() || ! $query->is_home() ) {
+		return;
+	}
+
+	$sample_post = get_page_by_path( 'hello-world', OBJECT, 'post' );
+	if ( ! $sample_post ) {
+		return;
+	}
+
+	$sample_content = preg_replace( '/<!--.*?-->/s', '', $sample_post->post_content );
+	$sample_content = trim( preg_replace( '/\s+/', ' ', wp_strip_all_tags( $sample_content ) ) );
+	if ( 'Welcome to WordPress. This is your first post. Edit or delete it, then start writing!' !== $sample_content ) {
+		return;
+	}
+
+	$excluded_posts   = (array) $query->get( 'post__not_in' );
+	$excluded_posts[] = $sample_post->ID;
+	$query->set( 'post__not_in', array_values( array_unique( array_map( 'absint', $excluded_posts ) ) ) );
+}
+add_action( 'pre_get_posts', 'centro_estudios_iasd_exclude_sample_post' );
+
+/**
  * Return the default value for a theme setting.
  *
  * @param string $setting Theme mod name.
