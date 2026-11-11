@@ -33,6 +33,7 @@ get_header();
 	</section>
 
 	<?php get_template_part( 'template-parts/philosophy' ); ?>
+	<?php get_template_part( 'template-parts/saturday-program' ); ?>
 
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : ?>
