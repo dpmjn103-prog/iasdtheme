@@ -15,7 +15,7 @@
 
 		<div class="sanctuary-section__stages">
 			<article class="sanctuary-stage">
-				<img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/sanctuary-court.svg' ) ); ?>" alt="<?php esc_attr_e( 'Ilustración del atrio del santuario con altar y fuente', 'centro-estudios-iasd' ); ?>" loading="lazy" decoding="async">
+				<img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/sanctuary-court.svg' ) . '?ver=' . CENTRO_ESTUDIOS_IASD_VERSION ); ?>" alt="<?php esc_attr_e( 'Ilustración del atrio del santuario con altar y fuente', 'centro-estudios-iasd' ); ?>" loading="lazy" decoding="async">
 				<div class="sanctuary-stage__copy">
 					<p class="sanctuary-stage__number"><?php esc_html_e( '01 · El atrio', 'centro-estudios-iasd' ); ?></p>
 					<h3><?php esc_html_e( 'El sacrificio', 'centro-estudios-iasd' ); ?></h3>
@@ -24,7 +24,7 @@
 			</article>
 
 			<article class="sanctuary-stage">
-				<img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/sanctuary-holy-place.svg' ) ); ?>" alt="<?php esc_attr_e( 'Ilustración del lugar santo con candelabro, mesa y altar de incienso', 'centro-estudios-iasd' ); ?>" loading="lazy" decoding="async">
+				<img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/sanctuary-holy-place.svg' ) . '?ver=' . CENTRO_ESTUDIOS_IASD_VERSION ); ?>" alt="<?php esc_attr_e( 'Ilustración del lugar santo con candelabro, mesa y altar de incienso', 'centro-estudios-iasd' ); ?>" loading="lazy" decoding="async">
 				<div class="sanctuary-stage__copy">
 					<p class="sanctuary-stage__number"><?php esc_html_e( '02 · El lugar santo', 'centro-estudios-iasd' ); ?></p>
 					<h3><?php esc_html_e( 'La presencia de Dios', 'centro-estudios-iasd' ); ?></h3>
@@ -33,7 +33,7 @@
 			</article>
 
 			<article class="sanctuary-stage">
-				<img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/sanctuary-most-holy.svg' ) ); ?>" alt="<?php esc_attr_e( 'Ilustración del arca del pacto en el lugar santísimo', 'centro-estudios-iasd' ); ?>" loading="lazy" decoding="async">
+				<img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/sanctuary-most-holy.svg' ) . '?ver=' . CENTRO_ESTUDIOS_IASD_VERSION ); ?>" alt="<?php esc_attr_e( 'Ilustración del arca del pacto en el lugar santísimo', 'centro-estudios-iasd' ); ?>" loading="lazy" decoding="async">
 				<div class="sanctuary-stage__copy">
 					<p class="sanctuary-stage__number"><?php esc_html_e( '03 · El lugar santísimo', 'centro-estudios-iasd' ); ?></p>
 					<h3><?php esc_html_e( 'Justicia y misericordia', 'centro-estudios-iasd' ); ?></h3>
@@ -43,9 +43,28 @@
 		</div>
 
 		<aside class="sanctuary-section__hope">
-			<span class="sanctuary-section__hope-mark" aria-hidden="true">✦</span>
+			<span class="sanctuary-section__hope-mark" aria-hidden="true">
+				<svg viewBox="0 0 24 24" focusable="false"><path d="m12 2.8 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 2.8Z" /></svg>
+			</span>
 			<p><strong><?php esc_html_e( 'Nuestra esperanza es Jesús.', 'centro-estudios-iasd' ); ?></strong> <?php esc_html_e( 'Creemos que él ministra como Sumo Sacerdote en el santuario celestial y que su obra final de juicio, antes de su regreso, manifiesta la justicia y misericordia de Dios. La salvación y la confianza del creyente descansan en Cristo.', 'centro-estudios-iasd' ); ?></p>
-			<cite><?php esc_html_e( 'Daniel 8:14; Hebreos 4:14–16; 8:1–2', 'centro-estudios-iasd' ); ?></cite>
 		</aside>
+
+		<details class="sanctuary-scriptures">
+			<summary><?php esc_html_e( 'Leer las citas bíblicas completas (Reina-Valera 1909)', 'centro-estudios-iasd' ); ?></summary>
+			<div class="sanctuary-scriptures__content">
+				<blockquote>
+					<p><?php esc_html_e( 'Y él dijo: Hasta dos mil y trescientos días de tarde y mañana; y el santuario será purificado.', 'centro-estudios-iasd' ); ?></p>
+					<cite><?php esc_html_e( 'Daniel 8:14 · Reina-Valera 1909', 'centro-estudios-iasd' ); ?></cite>
+				</blockquote>
+				<blockquote>
+					<p><?php esc_html_e( 'Por tanto, teniendo un gran Pontífice, que penetró los cielos, Jesús el Hijo de Dios, retengamos nuestra profesión. Porque no tenemos un Pontífice que no se pueda compadecer de nuestras flaquezas; mas tentado en todo según nuestra semejanza, pero sin pecado. Lleguémonos pues confiadamente al trono de la gracia, para alcanzar misericordia, y hallar gracia para el oportuno socorro.', 'centro-estudios-iasd' ); ?></p>
+					<cite><?php esc_html_e( 'Hebreos 4:14–16 · Reina-Valera 1909', 'centro-estudios-iasd' ); ?></cite>
+				</blockquote>
+				<blockquote>
+					<p><?php esc_html_e( 'Así que, la suma acerca de lo dicho es: Tenemos tal pontífice que se asentó á la diestra del trono de la Majestad en los cielos; Ministro del santuario, y de aquel verdadero tabernáculo que el Señor asentó, y no hombre.', 'centro-estudios-iasd' ); ?></p>
+					<cite><?php esc_html_e( 'Hebreos 8:1–2 · Reina-Valera 1909', 'centro-estudios-iasd' ); ?></cite>
+				</blockquote>
+			</div>
+		</details>
 	</div>
 </section>

@@ -3,7 +3,7 @@ Theme Name: Centro de Estudios IASD
 Theme URI: https://example.com/centro-estudios-iasd
 Author: Equipo de desarrollo y diseño del IASD
 Description: Un tema accesible y flexible para el Centro de Estudios IASD, con anuncios configurables, portada editorial y contenido Gutenberg.
-Version: 1.0.4
+Version: 1.0.5
 Requires at least: 6.4
 Tested up to: 6.8
 Requires PHP: 7.4
@@ -1700,6 +1700,12 @@ body.site-intro-active {
 	font-size: 1.1rem;
 }
 
+.sanctuary-section__hope-mark svg {
+	width: 1.35rem;
+	height: 1.35rem;
+	fill: currentColor;
+}
+
 .sanctuary-section__hope > p {
 	margin: 0;
 	color: var(--color-ink);
@@ -1710,12 +1716,48 @@ body.site-intro-active {
 	color: var(--color-blue-dark);
 }
 
-.sanctuary-section__hope cite {
-	color: #79551b;
-	font-size: 0.82rem;
+.sanctuary-scriptures {
+	margin-top: 1.25rem;
+	border: 1px solid rgba(0, 68, 107, 0.12);
+	border-radius: 0.85rem;
+	background: #fff;
+}
+
+.sanctuary-scriptures summary {
+	padding: 1rem 1.25rem;
+	color: var(--color-blue-dark);
+	cursor: pointer;
+	font-weight: 750;
+}
+
+.sanctuary-scriptures__content {
+	display: grid;
+	gap: 0.85rem;
+	padding: 0 1.25rem 1.25rem;
+}
+
+.sanctuary-scriptures blockquote {
+	margin: 0;
+	padding: 1rem 1.1rem;
+	border-left: 3px solid #d5aa62;
+	border-radius: 0 0.5rem 0.5rem 0;
+	background: #f8f6f0;
+}
+
+.sanctuary-scriptures blockquote p {
+	margin: 0;
+	color: var(--color-ink);
+	font-size: 0.92rem;
+	line-height: 1.75;
+}
+
+.sanctuary-scriptures blockquote cite {
+	display: block;
+	margin-top: 0.65rem;
+	color: var(--color-muted);
+	font-size: 0.78rem;
 	font-style: normal;
 	font-weight: 700;
-	white-space: nowrap;
 }
 
 .community-gallery {
@@ -2497,10 +2539,6 @@ body.site-intro-active {
 		grid-template-columns: auto 1fr;
 	}
 
-	.sanctuary-section__hope cite {
-		grid-column: 2;
-	}
-
 	.saturday-program__grid {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
@@ -2638,10 +2676,6 @@ body.site-intro-active {
 		grid-template-columns: 1fr;
 		gap: 0.7rem;
 		padding: 1.15rem;
-	}
-
-	.sanctuary-section__hope cite {
-		grid-column: auto;
 	}
 
 	.study-principle {

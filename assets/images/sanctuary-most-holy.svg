@@ -1,27 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
 	<title id="title">El lugar santísimo</title>
-	<desc id="desc">Ilustración vectorial del arca del pacto bajo una luz dorada en el lugar santísimo.</desc>
+	<desc id="desc">Ilustración editorial del arca del pacto en el lugar santísimo, bañada por una luz dorada.</desc>
 	<defs>
-		<linearGradient id="sanctuary" x2="0" y2="1">
-			<stop stop-color="#1b2b48"/>
-			<stop offset="1" stop-color="#3d3453"/>
+		<linearGradient id="chamber" x2="0" y2="1">
+			<stop stop-color="#202943"/>
+			<stop offset=".7" stop-color="#39334a"/>
+			<stop offset="1" stop-color="#574351"/>
 		</linearGradient>
-		<radialGradient id="glow">
-			<stop stop-color="#ffe9a8" stop-opacity=".85"/>
-			<stop offset="1" stop-color="#f1c56d" stop-opacity="0"/>
+		<linearGradient id="veil" x2="1">
+			<stop stop-color="#603747"/>
+			<stop offset=".5" stop-color="#b36855"/>
+			<stop offset="1" stop-color="#66364a"/>
+		</linearGradient>
+		<linearGradient id="ark" x2="0" y2="1">
+			<stop stop-color="#f2d18a"/>
+			<stop offset=".45" stop-color="#b98443"/>
+			<stop offset="1" stop-color="#704b35"/>
+		</linearGradient>
+		<radialGradient id="heavenly-light">
+			<stop stop-color="#fff0b8" stop-opacity=".85"/>
+			<stop offset=".45" stop-color="#f2c56f" stop-opacity=".32"/>
+			<stop offset="1" stop-color="#e0a955" stop-opacity="0"/>
 		</radialGradient>
+		<filter id="soft">
+			<feGaussianBlur stdDeviation="18"/>
+		</filter>
 	</defs>
-	<rect width="640" height="360" fill="#eee2c9"/>
-	<path d="M74 318V76L320 25l246 51v242Z" fill="url(#sanctuary)"/>
-	<path d="M84 91 320 41l236 50v20L320 62 84 111Z" fill="#984e54"/>
-	<path d="M104 108v208m432-208v208" stroke="#d0a45f" stroke-width="7"/>
-	<ellipse cx="320" cy="153" rx="162" ry="113" fill="url(#glow)"/>
-	<path d="M0 318h640v42H0Z" fill="#c6aa78"/>
-	<path d="M211 223h218l-19 76H230Z" fill="#a8793e" stroke="#e3c17b" stroke-width="5"/>
-	<path d="M197 215h246v20H197z" fill="#d8ad5e" stroke="#f0d798" stroke-width="4"/>
-	<path d="M239 211c-4-46 14-66 44-70-1 27-9 49-31 70m149 0c4-46-14-66-44-70 1 27 9 49 31 70" fill="none" stroke="#e5c27b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-	<path d="M252 211c14-11 30-17 48-18m88 18c-14-11-30-17-48-18" fill="none" stroke="#e5c27b" stroke-width="6" stroke-linecap="round"/>
-	<circle cx="320" cy="183" r="8" fill="#fff0bd"/>
-	<path d="M256 266h128m-112 18h96" stroke="#f3d996" stroke-width="3" opacity=".75"/>
-	<path d="M165 318h310" stroke="#e6c77e" stroke-width="3" opacity=".55"/>
+	<rect width="960" height="600" fill="#e8dcc5"/>
+	<path d="M73 518V119L480 38l407 81v399Z" fill="url(#chamber)"/>
+	<path d="M98 128 480 52l382 76v28l-382-73-382 73Z" fill="url(#veil)"/>
+	<path d="M119 156v348m722-348v348" stroke="#d4ae6a" stroke-width="8"/>
+	<path d="M0 520h960v80H0Z" fill="#bda27a"/>
+	<ellipse cx="481" cy="253" rx="292" ry="214" fill="url(#heavenly-light)" filter="url(#soft)"/>
+	<path d="M480 88v173m0-150-106 139m106-139 106 139" fill="none" stroke="#ffe8a6" stroke-width="2" opacity=".38"/>
+	<path d="M480 102v135m-78-99 73 94m83-94-73 94" fill="none" stroke="#fff5d5" stroke-width="2" opacity=".45"/>
+	<path d="M298 351h364l-31 147H329Z" fill="url(#ark)" stroke="#5d4334" stroke-width="7"/>
+	<path d="M278 339h404v28H278Z" fill="#dfb96d" stroke="#f3d998" stroke-width="5"/>
+	<path d="M315 385h330m-322 85h314" stroke="#f0d393" stroke-width="4" opacity=".6"/>
+	<path d="M344 374v110m272-110v110" stroke="#754c35" stroke-width="6"/>
+	<path d="M334 333c-4-78 20-112 83-121-2 49-18 89-58 120m267 1c4-78-20-112-83-121 2 49 18 89 58 120" fill="none" stroke="#efcf83" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M359 334c31-30 70-43 115-41m127 41c-31-30-70-43-115-41" fill="none" stroke="#e8c477" stroke-width="10" stroke-linecap="round"/>
+	<circle cx="480" cy="293" r="10" fill="#fff3c9"/>
+	<path d="M480 277v32" stroke="#fff3c9" stroke-width="3" opacity=".8"/>
+	<path d="M230 520h500" stroke="#e8d0a2" stroke-width="3" opacity=".42"/>
+	<g fill="#f4dcaa" opacity=".55">
+		<circle cx="174" cy="207" r="3"/><circle cx="787" cy="194" r="3"/><circle cx="217" cy="462" r="2"/>
+		<circle cx="748" cy="440" r="2"/><circle cx="694" cy="245" r="2"/>
+	</g>
 </svg>

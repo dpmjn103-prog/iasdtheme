@@ -1,29 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
 	<title id="title">El atrio del santuario</title>
-	<desc id="desc">Ilustración vectorial del altar y la fuente en el atrio del santuario en el desierto.</desc>
+	<desc id="desc">Ilustración editorial del atrio, el altar de bronce y la fuente de agua en el desierto.</desc>
 	<defs>
 		<linearGradient id="sky" x2="0" y2="1">
-			<stop stop-color="#f8e9c9"/>
-			<stop offset="1" stop-color="#fffaf0"/>
+			<stop stop-color="#f6d8a0"/>
+			<stop offset=".58" stop-color="#f9ead0"/>
+			<stop offset="1" stop-color="#fff5df"/>
+		</linearGradient>
+		<linearGradient id="sand" x2="0" y2="1">
+			<stop stop-color="#d7b77d"/>
+			<stop offset="1" stop-color="#b9915c"/>
 		</linearGradient>
 		<linearGradient id="linen" x2="0" y2="1">
 			<stop stop-color="#fffdf7"/>
-			<stop offset="1" stop-color="#e7d8b8"/>
+			<stop offset="1" stop-color="#e7d9bd"/>
 		</linearGradient>
+		<linearGradient id="bronze" x2="0" y2="1">
+			<stop stop-color="#e5b56d"/>
+			<stop offset=".48" stop-color="#a95f3a"/>
+			<stop offset="1" stop-color="#704132"/>
+		</linearGradient>
+		<linearGradient id="water" x2="0" y2="1">
+			<stop stop-color="#9bd1cf"/>
+			<stop offset="1" stop-color="#397e88"/>
+		</linearGradient>
+		<filter id="shadow" x="-.3" y="-.3" width="1.6" height="1.8">
+			<feGaussianBlur stdDeviation="12"/>
+		</filter>
 	</defs>
-	<rect width="640" height="360" fill="url(#sky)"/>
-	<circle cx="520" cy="72" r="31" fill="#edc578" opacity=".8"/>
-	<path d="M0 245 118 173l97 69 121-92 115 96 100-72 89 66v48H0Z" fill="#d5b67c" opacity=".45"/>
-	<path d="M0 274h640v86H0Z" fill="#d8bf91"/>
-	<path d="M85 180 316 120l239 60v98H85Z" fill="url(#linen)" stroke="#b48b4d" stroke-width="4"/>
-	<path d="m85 180 231-60v158H85Z" fill="#f3e7d0" stroke="#b48b4d" stroke-width="4"/>
-	<path d="m316 120 239 60v98H316Z" fill="#fbf5e9" stroke="#b48b4d" stroke-width="4"/>
-	<path d="M85 180h470M145 164v114m57-129v143m228-143v143m66-127v127" fill="none" stroke="#b48b4d" stroke-width="3"/>
-	<path d="M272 220h88v58h-88z" fill="#a95e38" stroke="#713d2d" stroke-width="4"/>
-	<path d="m262 220 54-35 54 35Z" fill="#cb8150" stroke="#713d2d" stroke-width="4"/>
-	<path d="M293 211c7-15 9-22 0-34 20 7 28 20 15 34 17-8 22-18 17-28 18 18 12 33-1 43h-25c-9-5-12-10-6-15Z" fill="#f1bd61"/>
-	<path d="M404 228h55l-7 12v30c0 12-41 12-41 0v-30Z" fill="#4a8f9c" stroke="#315a63" stroke-width="4"/>
-	<path d="M398 227h67v9h-67z" fill="#d5b66e" stroke="#8c6b36" stroke-width="3"/>
-	<path d="M412 248h39" stroke="#9fd0c8" stroke-width="4" opacity=".8"/>
-	<path d="M0 316h640" stroke="#c6a66f" stroke-width="3" opacity=".6"/>
+	<rect width="960" height="600" fill="url(#sky)"/>
+	<circle cx="775" cy="111" r="52" fill="#fff0bd" opacity=".8"/>
+	<circle cx="775" cy="111" r="80" fill="#fff0bd" opacity=".16"/>
+	<path d="m0 326 130-83 102 73 148-118 135 113 116-89 126 78 87-61 116 84v116H0Z" fill="#bc9b71" opacity=".38"/>
+	<path d="m0 380 147-67 116 51 149-66 128 81 140-56 127 48 112-37 141 68v198H0Z" fill="url(#sand)"/>
+	<path d="M70 447h820" stroke="#f1dbb2" stroke-width="2" opacity=".38"/>
+	<ellipse cx="474" cy="505" rx="350" ry="33" fill="#583d33" opacity=".2" filter="url(#shadow)"/>
+	<path d="M126 249 478 164l358 85v249H126Z" fill="url(#linen)" stroke="#ae8952" stroke-width="5"/>
+	<path d="m126 249 352-85v334H126Z" fill="#f3e7d0" stroke="#ae8952" stroke-width="5"/>
+	<path d="m478 164 358 85v249H478Z" fill="#fffaf0" stroke="#ae8952" stroke-width="5"/>
+	<path d="M126 249h710M191 233v265m80-285v304m411-304v304m80-285v265" fill="none" stroke="#b48b4d" stroke-width="4"/>
+	<path d="M132 260h698" stroke="#fff" stroke-width="4" opacity=".72"/>
+	<path d="M176 256v235m74-253v270m456-270v270m74-252v235" stroke="#fff" stroke-width="8" opacity=".55"/>
+	<path d="M367 349h148v128H367Z" fill="url(#bronze)" stroke="#633c31" stroke-width="6"/>
+	<path d="m348 348 93-57 93 57Z" fill="#cf8a50" stroke="#704132" stroke-width="6"/>
+	<path d="M386 373h110m-110 25h110m-110 25h110" stroke="#f1c47c" stroke-width="4" opacity=".72"/>
+	<path d="M408 341c8-22 14-29 3-49 28 12 35 33 17 51 25-11 31-25 23-39 27 25 17 47-3 61h-37c-13-8-15-17-3-24Z" fill="#f4c35d"/>
+	<path d="M426 355c-2-12 9-16 7-26 14 12 14 22 2 31h-8Z" fill="#fff1ba"/>
+	<path d="M644 367h112l-12 20v69c0 25-76 25-76 0v-69Z" fill="url(#water)" stroke="#345f62" stroke-width="6"/>
+	<path d="M634 359h132v17H634Z" fill="#d7af69" stroke="#89683d" stroke-width="5"/>
+	<path d="M657 407h84m-76 18h68" stroke="#c6ece3" stroke-width="5" stroke-linecap="round" opacity=".7"/>
+	<path d="M690 387v-14m20 14v-14" stroke="#f5d992" stroke-width="4"/>
+	<path d="M178 520h604" stroke="#f3d9a8" stroke-width="3" opacity=".45"/>
+	<g fill="#e7c894" opacity=".65">
+		<circle cx="87" cy="498" r="3"/><circle cx="852" cy="532" r="4"/><circle cx="276" cy="550" r="3"/>
+		<circle cx="879" cy="460" r="2"/><circle cx="92" cy="550" r="2"/><circle cx="590" cy="548" r="3"/>
+	</g>
 </svg>

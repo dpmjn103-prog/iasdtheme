@@ -1,30 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
 	<title id="title">El lugar santo</title>
-	<desc id="desc">Ilustración vectorial del candelabro, la mesa del pan y el altar de incienso dentro del tabernáculo.</desc>
+	<desc id="desc">Ilustración editorial del interior del santuario con el candelabro, la mesa del pan y el altar del incienso.</desc>
 	<defs>
-		<linearGradient id="wall" x2="0" y2="1">
-			<stop stop-color="#253c56"/>
-			<stop offset="1" stop-color="#14283d"/>
+		<linearGradient id="interior" x2="0" y2="1">
+			<stop stop-color="#1b3148"/>
+			<stop offset="1" stop-color="#101e31"/>
 		</linearGradient>
 		<linearGradient id="curtain" x2="1">
-			<stop stop-color="#8f4450"/>
-			<stop offset=".5" stop-color="#c17759"/>
-			<stop offset="1" stop-color="#6e3c50"/>
+			<stop stop-color="#703a4c"/>
+			<stop offset=".5" stop-color="#ba7057"/>
+			<stop offset="1" stop-color="#60364a"/>
 		</linearGradient>
+		<linearGradient id="gold" x2="0" y2="1">
+			<stop stop-color="#ffe29a"/>
+			<stop offset=".5" stop-color="#d39a45"/>
+			<stop offset="1" stop-color="#8f602d"/>
+		</linearGradient>
+		<radialGradient id="glow">
+			<stop stop-color="#ffdfa0" stop-opacity=".46"/>
+			<stop offset="1" stop-color="#f5c46b" stop-opacity="0"/>
+		</radialGradient>
+		<filter id="blur">
+			<feGaussianBlur stdDeviation="15"/>
+		</filter>
 	</defs>
-	<rect width="640" height="360" fill="#f0e2c6"/>
-	<path d="M54 318V76L320 24l266 52v242Z" fill="url(#wall)"/>
-	<path d="m54 76 266-52v294H54Z" fill="#314b63" opacity=".65"/>
-	<path d="M82 84 320 41l238 43v18L320 60 82 102Z" fill="url(#curtain)"/>
-	<path d="M87 102v205m466-205v205" stroke="#d4ab69" stroke-width="7"/>
-	<path d="M0 318h640v42H0Z" fill="#c6aa78"/>
-	<path d="M286 271h68v26h-68z" fill="#bd8a45"/>
-	<path d="M293 267v-76m0 0-28-25m28 25-28 25m28-25 28-25m-28 25 28 25m-28-25v-43" fill="none" stroke="#e8bd62" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-	<path d="M259 162c-8-17-1-24 8-20 1-13 13-14 16 0 11-3 15 8 6 20Zm56 0c-8-17-1-24 8-20 1-13 13-14 16 0 11-3 15 8 6 20Zm-28-44c-8-17-1-24 8-20 1-13 13-14 16 0 11-3 15 8 6 20Z" fill="#f6c875"/>
-	<path d="M114 254h96v12h-96zm11-12h74v12h-74zm8-12h58v12h-58z" fill="#e2bb70" stroke="#936d3b" stroke-width="3"/>
-	<path d="M431 232h66v55h-66z" fill="#b77e42" stroke="#e2bd75" stroke-width="4"/>
-	<path d="M423 226h82v11h-82z" fill="#dfb660" stroke="#f0d99e" stroke-width="3"/>
-	<path d="M454 212c-8-17 8-20 2-36 17 11 8 21 7 29 11-10 5-18 12-23 12 18 7 27 1 36Z" fill="#f4c76d" opacity=".8"/>
-	<circle cx="472" cy="184" r="27" fill="#f4c76d" opacity=".1"/>
-	<path d="M231 318h177" stroke="#e8bd62" stroke-width="3" opacity=".6"/>
+	<rect width="960" height="600" fill="#e7d7b9"/>
+	<path d="M77 518V122L480 39l403 83v396Z" fill="url(#interior)"/>
+	<path d="m77 122 403-83v479H77Z" fill="#294158" opacity=".47"/>
+	<path d="M104 132 480 55l376 77v28l-376-75-376 75Z" fill="url(#curtain)"/>
+	<path d="M115 154v347m730-347v347" stroke="#d4ae6a" stroke-width="8"/>
+	<path d="M0 520h960v80H0Z" fill="#bba178"/>
+	<path d="M0 520h960" stroke="#ead5ad" stroke-width="4"/>
+	<ellipse cx="482" cy="300" rx="345" ry="216" fill="url(#glow)" filter="url(#blur)"/>
+	<path d="M428 452h104v47H428Z" fill="url(#gold)" stroke="#6b4c32" stroke-width="5"/>
+	<path d="M444 446V275m0 0-58-50m58 50-58 50m58-50 58-50m-58 50 58 50m-58-50v-99" fill="none" stroke="url(#gold)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M382 218c-17-30-2-44 17-34 2-23 27-25 32 0 20-6 28 15 11 34Zm116 0c-17-30-2-44 17-34 2-23 27-25 32 0 20-6 28 15 11 34Zm-58-71c-17-30-2-44 17-34 2-23 27-25 32 0 20-6 28 15 11 34Z" fill="#ffd47a"/>
+	<path d="M391 216h35m-34 27h39m-39 27h39" stroke="#fff0c1" stroke-width="3" opacity=".65"/>
+	<path d="M193 390h141v18H193Zm18-21h105v21H211Zm17-22h71v22h-71Z" fill="url(#gold)" stroke="#795431" stroke-width="4"/>
+	<path d="M230 345v-8m34 8v-8m34 8v-8" stroke="#fff0c1" stroke-width="3"/>
+	<path d="M633 378h105v121H633Z" fill="#a96c3e" stroke="#e1bb77" stroke-width="5"/>
+	<path d="M620 365h131v19H620Z" fill="url(#gold)" stroke="#f0d99e" stroke-width="4"/>
+	<path d="M653 351c-22-31 16-43 5-72 34 22 18 42 13 61 24-19 10-37 26-48 24 35 14 55 2 72Z" fill="#f4c66e" opacity=".82"/>
+	<path d="M675 344c-8-18 10-20 8-34 18 15 12 27 2 38Z" fill="#fff3c9"/>
+	<path d="M165 503h630" stroke="#dfbd81" stroke-width="3" opacity=".4"/>
+	<g fill="#f5d89d" opacity=".55">
+		<circle cx="162" cy="189" r="3"/><circle cx="798" cy="201" r="3"/><circle cx="575" cy="475" r="2"/>
+		<circle cx="354" cy="420" r="2"/><circle cx="815" cy="457" r="3"/>
+	</g>
 </svg>
