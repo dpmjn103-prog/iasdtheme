@@ -17,9 +17,9 @@
 			>
 		</div>
 		<div class="orion-feature__copy">
-			<p class="orion-feature__eyebrow"><?php esc_html_e( 'La belleza de la creación', 'centro-estudios-iasd' ); ?></p>
-			<h2 id="orion-feature-title"><?php esc_html_e( 'Un universo que nos inspira', 'centro-estudios-iasd' ); ?></h2>
-			<p><?php esc_html_e( 'Una mirada a la inmensidad del cosmos junto al emblema de nuestra comunidad.', 'centro-estudios-iasd' ); ?></p>
+			<p class="orion-feature__eyebrow"><?php esc_html_e( 'Nuestra esperanza', 'centro-estudios-iasd' ); ?></p>
+			<h2 id="orion-feature-title"><?php esc_html_e( 'Esperamos el advenimiento de Jesús', 'centro-estudios-iasd' ); ?></h2>
+			<p><?php esc_html_e( 'Contemplamos la inmensidad de la creación con la esperanza puesta en la promesa de su regreso.', 'centro-estudios-iasd' ); ?></p>
 		</div>
 	</div>
 	<p class="orion-feature__credit">
