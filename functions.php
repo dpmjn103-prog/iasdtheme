@@ -86,6 +86,7 @@ function centro_estudios_iasd_primary_menu_fallback() {
 			<button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="submenu-ministerios"><span class="screen-reader-text"><?php esc_html_e( 'Mostrar opciones de Ministerios', 'centro-estudios-iasd' ); ?></span></button>
 			<ul class="sub-menu" id="submenu-ministerios">
 				<li><a href="<?php echo esc_url( home_url( '/#estudio-biblico' ) ); ?>"><?php esc_html_e( 'Estudio Bíblico', 'centro-estudios-iasd' ); ?></a></li>
+				<li><a href="<?php echo esc_url( home_url( '/#santuario' ) ); ?>"><?php esc_html_e( 'Santuario bíblico', 'centro-estudios-iasd' ); ?></a></li>
 				<li><a href="<?php echo esc_url( home_url( '/#peticion-oracion' ) ); ?>"><?php esc_html_e( 'Oración', 'centro-estudios-iasd' ); ?></a></li>
 				<li><a href="<?php echo esc_url( home_url( '/#preguntas-frecuentes' ) ); ?>"><?php esc_html_e( 'Preguntas frecuentes', 'centro-estudios-iasd' ); ?></a></li>
 			</ul>

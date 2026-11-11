@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+	<title id="title">El lugar santísimo</title>
+	<desc id="desc">Ilustración vectorial del arca del pacto bajo una luz dorada en el lugar santísimo.</desc>
+	<defs>
+		<linearGradient id="sanctuary" x2="0" y2="1">
+			<stop stop-color="#1b2b48"/>
+			<stop offset="1" stop-color="#3d3453"/>
+		</linearGradient>
+		<radialGradient id="glow">
+			<stop stop-color="#ffe9a8" stop-opacity=".85"/>
+			<stop offset="1" stop-color="#f1c56d" stop-opacity="0"/>
+		</radialGradient>
+	</defs>
+	<rect width="640" height="360" fill="#eee2c9"/>
+	<path d="M74 318V76L320 25l246 51v242Z" fill="url(#sanctuary)"/>
+	<path d="M84 91 320 41l236 50v20L320 62 84 111Z" fill="#984e54"/>
+	<path d="M104 108v208m432-208v208" stroke="#d0a45f" stroke-width="7"/>
+	<ellipse cx="320" cy="153" rx="162" ry="113" fill="url(#glow)"/>
+	<path d="M0 318h640v42H0Z" fill="#c6aa78"/>
+	<path d="M211 223h218l-19 76H230Z" fill="#a8793e" stroke="#e3c17b" stroke-width="5"/>
+	<path d="M197 215h246v20H197z" fill="#d8ad5e" stroke="#f0d798" stroke-width="4"/>
+	<path d="M239 211c-4-46 14-66 44-70-1 27-9 49-31 70m149 0c4-46-14-66-44-70 1 27 9 49 31 70" fill="none" stroke="#e5c27b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M252 211c14-11 30-17 48-18m88 18c-14-11-30-17-48-18" fill="none" stroke="#e5c27b" stroke-width="6" stroke-linecap="round"/>
+	<circle cx="320" cy="183" r="8" fill="#fff0bd"/>
+	<path d="M256 266h128m-112 18h96" stroke="#f3d996" stroke-width="3" opacity=".75"/>
+	<path d="M165 318h310" stroke="#e6c77e" stroke-width="3" opacity=".55"/>
+</svg>

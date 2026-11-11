@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+	<title id="title">El lugar santo</title>
+	<desc id="desc">Ilustración vectorial del candelabro, la mesa del pan y el altar de incienso dentro del tabernáculo.</desc>
+	<defs>
+		<linearGradient id="wall" x2="0" y2="1">
+			<stop stop-color="#253c56"/>
+			<stop offset="1" stop-color="#14283d"/>
+		</linearGradient>
+		<linearGradient id="curtain" x2="1">
+			<stop stop-color="#8f4450"/>
+			<stop offset=".5" stop-color="#c17759"/>
+			<stop offset="1" stop-color="#6e3c50"/>
+		</linearGradient>
+	</defs>
+	<rect width="640" height="360" fill="#f0e2c6"/>
+	<path d="M54 318V76L320 24l266 52v242Z" fill="url(#wall)"/>
+	<path d="m54 76 266-52v294H54Z" fill="#314b63" opacity=".65"/>
+	<path d="M82 84 320 41l238 43v18L320 60 82 102Z" fill="url(#curtain)"/>
+	<path d="M87 102v205m466-205v205" stroke="#d4ab69" stroke-width="7"/>
+	<path d="M0 318h640v42H0Z" fill="#c6aa78"/>
+	<path d="M286 271h68v26h-68z" fill="#bd8a45"/>
+	<path d="M293 267v-76m0 0-28-25m28 25-28 25m28-25 28-25m-28 25 28 25m-28-25v-43" fill="none" stroke="#e8bd62" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M259 162c-8-17-1-24 8-20 1-13 13-14 16 0 11-3 15 8 6 20Zm56 0c-8-17-1-24 8-20 1-13 13-14 16 0 11-3 15 8 6 20Zm-28-44c-8-17-1-24 8-20 1-13 13-14 16 0 11-3 15 8 6 20Z" fill="#f6c875"/>
+	<path d="M114 254h96v12h-96zm11-12h74v12h-74zm8-12h58v12h-58z" fill="#e2bb70" stroke="#936d3b" stroke-width="3"/>
+	<path d="M431 232h66v55h-66z" fill="#b77e42" stroke="#e2bd75" stroke-width="4"/>
+	<path d="M423 226h82v11h-82z" fill="#dfb660" stroke="#f0d99e" stroke-width="3"/>
+	<path d="M454 212c-8-17 8-20 2-36 17 11 8 21 7 29 11-10 5-18 12-23 12 18 7 27 1 36Z" fill="#f4c76d" opacity=".8"/>
+	<circle cx="472" cy="184" r="27" fill="#f4c76d" opacity=".1"/>
+	<path d="M231 318h177" stroke="#e8bd62" stroke-width="3" opacity=".6"/>
+</svg>

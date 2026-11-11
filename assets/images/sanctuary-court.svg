@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+	<title id="title">El atrio del santuario</title>
+	<desc id="desc">Ilustración vectorial del altar y la fuente en el atrio del santuario en el desierto.</desc>
+	<defs>
+		<linearGradient id="sky" x2="0" y2="1">
+			<stop stop-color="#f8e9c9"/>
+			<stop offset="1" stop-color="#fffaf0"/>
+		</linearGradient>
+		<linearGradient id="linen" x2="0" y2="1">
+			<stop stop-color="#fffdf7"/>
+			<stop offset="1" stop-color="#e7d8b8"/>
+		</linearGradient>
+	</defs>
+	<rect width="640" height="360" fill="url(#sky)"/>
+	<circle cx="520" cy="72" r="31" fill="#edc578" opacity=".8"/>
+	<path d="M0 245 118 173l97 69 121-92 115 96 100-72 89 66v48H0Z" fill="#d5b67c" opacity=".45"/>
+	<path d="M0 274h640v86H0Z" fill="#d8bf91"/>
+	<path d="M85 180 316 120l239 60v98H85Z" fill="url(#linen)" stroke="#b48b4d" stroke-width="4"/>
+	<path d="m85 180 231-60v158H85Z" fill="#f3e7d0" stroke="#b48b4d" stroke-width="4"/>
+	<path d="m316 120 239 60v98H316Z" fill="#fbf5e9" stroke="#b48b4d" stroke-width="4"/>
+	<path d="M85 180h470M145 164v114m57-129v143m228-143v143m66-127v127" fill="none" stroke="#b48b4d" stroke-width="3"/>
+	<path d="M272 220h88v58h-88z" fill="#a95e38" stroke="#713d2d" stroke-width="4"/>
+	<path d="m262 220 54-35 54 35Z" fill="#cb8150" stroke="#713d2d" stroke-width="4"/>
+	<path d="M293 211c7-15 9-22 0-34 20 7 28 20 15 34 17-8 22-18 17-28 18 18 12 33-1 43h-25c-9-5-12-10-6-15Z" fill="#f1bd61"/>
+	<path d="M404 228h55l-7 12v30c0 12-41 12-41 0v-30Z" fill="#4a8f9c" stroke="#315a63" stroke-width="4"/>
+	<path d="M398 227h67v9h-67z" fill="#d5b66e" stroke="#8c6b36" stroke-width="3"/>
+	<path d="M412 248h39" stroke="#9fd0c8" stroke-width="4" opacity=".8"/>
+	<path d="M0 316h640" stroke="#c6a66f" stroke-width="3" opacity=".6"/>
+</svg>
