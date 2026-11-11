@@ -43,8 +43,6 @@ $welcome_logo_id = get_theme_mod( 'custom_logo' );
 		</div>
 	</section>
 
-	<?php get_template_part( 'template-parts/location' ); ?>
-
 	<section class="page-content page-content--wide" aria-labelledby="index-title">
 		<header class="content-intro">
 			<p class="eyebrow"><?php esc_html_e( 'Centro de Estudios IASD', 'centro-estudios-iasd' ); ?></p>
@@ -77,6 +75,7 @@ $welcome_logo_id = get_theme_mod( 'custom_logo' );
 			</div>
 		<?php endif; ?>
 	</section>
+	<?php get_template_part( 'template-parts/location' ); ?>
 </main>
 <?php
 get_footer();

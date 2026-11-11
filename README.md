@@ -13,6 +13,7 @@ Tema de WordPress adaptable y accesible para presentar el Centro de Estudios IAS
 - **Identidad del sitio:** carga el logo en **Apariencia → Personalizar → Identidad del sitio**.
 - **Anuncio superior:** activa o desactiva el banner y ajusta texto, colores, velocidad y tamaño.
 - **Portada y botones:** configura la imagen, títulos, descripciones, etiquetas, enlaces y estilos de los dos CTA.
+- **Ubicación:** la sección de visita incluye mapa, dirección, teléfono, correo y horario; sus datos se editan en `template-parts/location.php`. Si el enlace del botón “Visítanos este sábado” se deja vacío, lleva a esta sección.
 - **Pie de página:** edita la información, datos de contacto, redes sociales y verso bíblico.
 - **Menús:** crea y asigna los menús principal y Explorar en **Apariencia → Menús** o en el editor de navegación de tu instalación.
 - **Secciones de portada:** edita la página establecida como portada y agrega, ordena o elimina bloques de Gutenberg debajo del hero.

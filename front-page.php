@@ -32,8 +32,6 @@ get_header();
 		</div>
 	</section>
 
-	<?php get_template_part( 'template-parts/location' ); ?>
-
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
@@ -46,6 +44,7 @@ get_header();
 			<?php endif; ?>
 		<?php endwhile; ?>
 	<?php endif; ?>
+	<?php get_template_part( 'template-parts/location' ); ?>
 </main>
 <?php
 get_footer();
