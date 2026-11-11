@@ -32,7 +32,12 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 
+	const toggle = document.querySelector(".menu-toggle");
 	const navigation = document.querySelector(".primary-navigation");
+
+	if (!toggle || !navigation) {
+		return;
+	}
 
 	function scrollToCurrentSection(behavior) {
 		if (!window.location.hash) {
@@ -56,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
 	function isPrimaryNavigationHash() {
-		if (!navigation || !window.location.hash) {
+		if (!window.location.hash) {
 			return false;
 		}
 
@@ -67,49 +72,6 @@ document.addEventListener("DOMContentLoaded", function () {
 				url.search === window.location.search &&
 				url.hash === window.location.hash;
 		});
-	}
-
-	if (navigation) {
-		navigation.addEventListener("click", function (event) {
-			const link = event.target.closest("a");
-			if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || link.target || link.hasAttribute("download")) {
-				return;
-			}
-
-			const url = new URL(link.href, window.location.href);
-			if (url.origin !== window.location.origin || url.pathname !== window.location.pathname || url.search !== window.location.search || !url.hash) {
-				return;
-			}
-
-			const target = document.getElementById(decodeURIComponent(url.hash.slice(1)));
-			if (!target) {
-				return;
-			}
-
-			event.preventDefault();
-			if (window.location.hash !== url.hash) {
-				window.history.pushState(null, "", url.href);
-			}
-			scrollToCurrentSection(window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth");
-		});
-	}
-
-	if (isPrimaryNavigationHash()) {
-		window.requestAnimationFrame(function () {
-			scrollToCurrentSection("auto");
-		});
-	}
-
-	window.addEventListener("popstate", function () {
-		if (isPrimaryNavigationHash()) {
-			scrollToCurrentSection(window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth");
-		}
-	});
-
-	const toggle = document.querySelector(".menu-toggle");
-
-	if (!toggle || !navigation) {
-		return;
 	}
 
 	navigation.querySelectorAll("li.menu-item-has-children").forEach(function (item, index) {
@@ -184,8 +146,60 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 
 	navigation.addEventListener("click", function (event) {
-		if (event.target.closest("a")) {
-			closeMenu();
+		const link = event.target.closest("a");
+
+		if (
+			!link ||
+			event.defaultPrevented ||
+			event.button !== 0 ||
+			event.metaKey ||
+			event.ctrlKey ||
+			event.shiftKey ||
+			event.altKey ||
+			link.target ||
+			link.hasAttribute("download")
+		) {
+			return;
+		}
+
+		const destination = new URL(link.href, window.location.href);
+		if (
+			destination.origin === window.location.origin &&
+			destination.pathname === window.location.pathname &&
+			destination.search === window.location.search &&
+			destination.hash
+		) {
+			const target = document.getElementById(destination.hash.slice(1));
+			if (target) {
+				event.preventDefault();
+				const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+					? "auto"
+					: "smooth";
+
+				closeMenu();
+				if (window.location.hash !== destination.hash) {
+					window.history.pushState(null, "", destination.href);
+				}
+				scrollToCurrentSection(behavior);
+				return;
+			}
+		}
+
+		closeMenu();
+	});
+
+	if (isPrimaryNavigationHash()) {
+		window.requestAnimationFrame(function () {
+			scrollToCurrentSection("auto");
+		});
+	}
+
+	window.addEventListener("popstate", function () {
+		if (isPrimaryNavigationHash()) {
+			const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+				? "auto"
+				: "smooth";
+			scrollToCurrentSection(behavior);
 		}
 	});
 
