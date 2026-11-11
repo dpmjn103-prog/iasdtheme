@@ -27,30 +27,50 @@
 		<filter id="shadow" x="-.3" y="-.3" width="1.6" height="1.8">
 			<feGaussianBlur stdDeviation="12"/>
 		</filter>
+		<filter id="surface-texture">
+			<feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="2" seed="12"/>
+			<feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .25 0 0 0 .12 0"/>
+		</filter>
+		<filter id="object-shadow" x="-.4" y="-.4" width="1.8" height="1.9">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+			<feOffset dy="9"/>
+			<feComponentTransfer><feFuncA type="linear" slope=".28"/></feComponentTransfer>
+			<feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+		</filter>
 	</defs>
 	<rect width="960" height="600" fill="url(#sky)"/>
 	<circle cx="775" cy="111" r="52" fill="#fff0bd" opacity=".8"/>
 	<circle cx="775" cy="111" r="80" fill="#fff0bd" opacity=".16"/>
 	<path d="m0 326 130-83 102 73 148-118 135 113 116-89 126 78 87-61 116 84v116H0Z" fill="#bc9b71" opacity=".38"/>
 	<path d="m0 380 147-67 116 51 149-66 128 81 140-56 127 48 112-37 141 68v198H0Z" fill="url(#sand)"/>
+	<path d="m0 380 147-67 116 51 149-66 128 81 140-56 127 48 112-37 141 68v198H0Z" filter="url(#surface-texture)" opacity=".55"/>
+	<path d="M37 376q45-20 89-5m34-37q30-12 57 5m584 12q38-19 76 0m-142-38q29-13 57-2" fill="none" stroke="#f5e2bd" stroke-width="5" opacity=".35"/>
 	<path d="M70 447h820" stroke="#f1dbb2" stroke-width="2" opacity=".38"/>
 	<ellipse cx="474" cy="505" rx="350" ry="33" fill="#583d33" opacity=".2" filter="url(#shadow)"/>
-	<path d="M126 249 478 164l358 85v249H126Z" fill="url(#linen)" stroke="#ae8952" stroke-width="5"/>
+	<path d="M126 249 478 164l358 85v249H126Z" fill="url(#linen)" stroke="#ae8952" stroke-width="5" filter="url(#object-shadow)"/>
 	<path d="m126 249 352-85v334H126Z" fill="#f3e7d0" stroke="#ae8952" stroke-width="5"/>
 	<path d="m478 164 358 85v249H478Z" fill="#fffaf0" stroke="#ae8952" stroke-width="5"/>
+	<path d="M140 256 470 179v304m21-304 331 79v225" fill="none" stroke="#cdbb98" stroke-width="3" opacity=".62"/>
+	<path d="M158 263 158 487m30-231v234m287-310v306m23-300 310 73v218" fill="none" stroke="#fff" stroke-width="9" opacity=".27"/>
+	<path d="M127 249 478 164l358 85v249H126Z" filter="url(#surface-texture)" opacity=".4"/>
 	<path d="M126 249h710M191 233v265m80-285v304m411-304v304m80-285v265" fill="none" stroke="#b48b4d" stroke-width="4"/>
 	<path d="M132 260h698" stroke="#fff" stroke-width="4" opacity=".72"/>
 	<path d="M176 256v235m74-253v270m456-270v270m74-252v235" stroke="#fff" stroke-width="8" opacity=".55"/>
-	<path d="M367 349h148v128H367Z" fill="url(#bronze)" stroke="#633c31" stroke-width="6"/>
+	<path d="M367 349h148v128H367Z" fill="url(#bronze)" stroke="#633c31" stroke-width="6" filter="url(#object-shadow)"/>
 	<path d="m348 348 93-57 93 57Z" fill="#cf8a50" stroke="#704132" stroke-width="6"/>
+	<path d="m371 346 70-41 70 41" fill="none" stroke="#f1c47c" stroke-width="4" opacity=".72"/>
 	<path d="M386 373h110m-110 25h110m-110 25h110" stroke="#f1c47c" stroke-width="4" opacity=".72"/>
 	<path d="M408 341c8-22 14-29 3-49 28 12 35 33 17 51 25-11 31-25 23-39 27 25 17 47-3 61h-37c-13-8-15-17-3-24Z" fill="#f4c35d"/>
 	<path d="M426 355c-2-12 9-16 7-26 14 12 14 22 2 31h-8Z" fill="#fff1ba"/>
-	<path d="M644 367h112l-12 20v69c0 25-76 25-76 0v-69Z" fill="url(#water)" stroke="#345f62" stroke-width="6"/>
+	<path d="M644 367h112l-12 20v69c0 25-76 25-76 0v-69Z" fill="url(#water)" stroke="#345f62" stroke-width="6" filter="url(#object-shadow)"/>
 	<path d="M634 359h132v17H634Z" fill="#d7af69" stroke="#89683d" stroke-width="5"/>
 	<path d="M657 407h84m-76 18h68" stroke="#c6ece3" stroke-width="5" stroke-linecap="round" opacity=".7"/>
 	<path d="M690 387v-14m20 14v-14" stroke="#f5d992" stroke-width="4"/>
 	<path d="M178 520h604" stroke="#f3d9a8" stroke-width="3" opacity=".45"/>
+	<g fill="none" stroke="#667b49" stroke-linecap="round">
+		<path d="M77 511q-10-24 0-42m0 42q12-22 18-30m-18 17q-13-18-20-20" stroke-width="5"/>
+		<path d="M870 520q-9-26 1-47m0 47q12-20 19-28m-19 15q-12-19-20-22" stroke-width="5"/>
+	</g>
 	<g fill="#e7c894" opacity=".65">
 		<circle cx="87" cy="498" r="3"/><circle cx="852" cy="532" r="4"/><circle cx="276" cy="550" r="3"/>
 		<circle cx="879" cy="460" r="2"/><circle cx="92" cy="550" r="2"/><circle cx="590" cy="548" r="3"/>

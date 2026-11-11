@@ -8,7 +8,7 @@
 <section class="sanctuary-section" id="santuario" aria-labelledby="sanctuary-title">
 	<div class="sanctuary-section__inner">
 		<header class="sanctuary-section__heading">
-			<p class="sanctuary-section__eyebrow"><?php esc_html_e( 'Una enseñanza bíblica', 'centro-estudios-iasd' ); ?></p>
+			<p class="sanctuary-section__eyebrow"><?php esc_html_e( 'Creemos en', 'centro-estudios-iasd' ); ?></p>
 			<h2 id="sanctuary-title"><?php esc_html_e( 'El santuario: una imagen del plan de salvación', 'centro-estudios-iasd' ); ?></h2>
 			<p><?php esc_html_e( 'Para la fe adventista, el santuario bíblico ayuda a comprender cómo Jesús ofrece su vida por nosotros y hoy intercede por la humanidad en el santuario celestial.', 'centro-estudios-iasd' ); ?></p>
 		</header>
@@ -50,19 +50,19 @@
 		</aside>
 
 		<details class="sanctuary-scriptures">
-			<summary><?php esc_html_e( 'Leer las citas bíblicas completas (Reina-Valera 1909)', 'centro-estudios-iasd' ); ?></summary>
+			<summary><?php esc_html_e( 'Citas y resúmenes bíblicos · referencias RVR1960', 'centro-estudios-iasd' ); ?></summary>
 			<div class="sanctuary-scriptures__content">
 				<blockquote>
-					<p><?php esc_html_e( 'Y él dijo: Hasta dos mil y trescientos días de tarde y mañana; y el santuario será purificado.', 'centro-estudios-iasd' ); ?></p>
-					<cite><?php esc_html_e( 'Daniel 8:14 · Reina-Valera 1909', 'centro-estudios-iasd' ); ?></cite>
+					<p><?php esc_html_e( 'La visión anuncia que, al final del periodo señalado, el santuario sería restaurado y vindicado.', 'centro-estudios-iasd' ); ?></p>
+					<cite><?php esc_html_e( 'Daniel 8:14 · referencia RVR1960; resumen en palabras propias', 'centro-estudios-iasd' ); ?></cite>
 				</blockquote>
 				<blockquote>
-					<p><?php esc_html_e( 'Por tanto, teniendo un gran Pontífice, que penetró los cielos, Jesús el Hijo de Dios, retengamos nuestra profesión. Porque no tenemos un Pontífice que no se pueda compadecer de nuestras flaquezas; mas tentado en todo según nuestra semejanza, pero sin pecado. Lleguémonos pues confiadamente al trono de la gracia, para alcanzar misericordia, y hallar gracia para el oportuno socorro.', 'centro-estudios-iasd' ); ?></p>
-					<cite><?php esc_html_e( 'Hebreos 4:14–16 · Reina-Valera 1909', 'centro-estudios-iasd' ); ?></cite>
+					<p><?php esc_html_e( 'Jesús, el Hijo de Dios, es nuestro gran Sumo Sacerdote. Comprende nuestras debilidades y nos invita a acercarnos a Dios con confianza para recibir misericordia y ayuda.', 'centro-estudios-iasd' ); ?></p>
+					<cite><?php esc_html_e( 'Hebreos 4:14–16 · referencia RVR1960; resumen en palabras propias', 'centro-estudios-iasd' ); ?></cite>
 				</blockquote>
 				<blockquote>
-					<p><?php esc_html_e( 'Así que, la suma acerca de lo dicho es: Tenemos tal pontífice que se asentó á la diestra del trono de la Majestad en los cielos; Ministro del santuario, y de aquel verdadero tabernáculo que el Señor asentó, y no hombre.', 'centro-estudios-iasd' ); ?></p>
-					<cite><?php esc_html_e( 'Hebreos 8:1–2 · Reina-Valera 1909', 'centro-estudios-iasd' ); ?></cite>
+					<p><?php esc_html_e( 'Cristo ministra en el santuario celestial, el verdadero tabernáculo establecido por Dios y no por seres humanos.', 'centro-estudios-iasd' ); ?></p>
+					<cite><?php esc_html_e( 'Hebreos 8:1–2 · referencia RVR1960; resumen en palabras propias', 'centro-estudios-iasd' ); ?></cite>
 				</blockquote>
 			</div>
 		</details>

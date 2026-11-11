@@ -25,23 +25,40 @@
 		<filter id="soft">
 			<feGaussianBlur stdDeviation="18"/>
 		</filter>
+		<filter id="velvet-texture">
+			<feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="2" seed="11"/>
+			<feColorMatrix values="0 0 0 0 .35 0 0 0 0 .22 0 0 0 0 .2 0 0 0 .13 0"/>
+		</filter>
+		<filter id="ark-shadow" x="-.4" y="-.4" width="1.8" height="1.9">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+			<feOffset dy="11"/>
+			<feComponentTransfer><feFuncA type="linear" slope=".38"/></feComponentTransfer>
+			<feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+		</filter>
 	</defs>
 	<rect width="960" height="600" fill="#e8dcc5"/>
 	<path d="M73 518V119L480 38l407 81v399Z" fill="url(#chamber)"/>
+	<path d="M83 125 480 48l397 77v378H83Z" filter="url(#velvet-texture)" opacity=".34"/>
 	<path d="M98 128 480 52l382 76v28l-382-73-382 73Z" fill="url(#veil)"/>
+	<path d="m108 145 372-72 372 72m-728 15 356-68 356 68" fill="none" stroke="#dfae79" stroke-width="4" opacity=".34"/>
 	<path d="M119 156v348m722-348v348" stroke="#d4ae6a" stroke-width="8"/>
 	<path d="M0 520h960v80H0Z" fill="#bda27a"/>
+	<path d="M0 520h960" stroke="#ead5ad" stroke-width="4"/>
+	<path d="M110 547h740m-613-27v80m126-80v80m126-80v80m126-80v80m126-80v80" stroke="#e8cd9d" stroke-width="2" opacity=".32"/>
 	<ellipse cx="481" cy="253" rx="292" ry="214" fill="url(#heavenly-light)" filter="url(#soft)"/>
 	<path d="M480 88v173m0-150-106 139m106-139 106 139" fill="none" stroke="#ffe8a6" stroke-width="2" opacity=".38"/>
 	<path d="M480 102v135m-78-99 73 94m83-94-73 94" fill="none" stroke="#fff5d5" stroke-width="2" opacity=".45"/>
-	<path d="M298 351h364l-31 147H329Z" fill="url(#ark)" stroke="#5d4334" stroke-width="7"/>
-	<path d="M278 339h404v28H278Z" fill="#dfb96d" stroke="#f3d998" stroke-width="5"/>
+	<path d="M298 351h364l-31 147H329Z" fill="url(#ark)" stroke="#5d4334" stroke-width="7" filter="url(#ark-shadow)"/>
+	<path d="M278 339h404v28H278Z" fill="#dfb96d" stroke="#f3d998" stroke-width="5" filter="url(#ark-shadow)"/>
 	<path d="M315 385h330m-322 85h314" stroke="#f0d393" stroke-width="4" opacity=".6"/>
 	<path d="M344 374v110m272-110v110" stroke="#754c35" stroke-width="6"/>
+	<path d="M322 373v104m316-104v104" stroke="#f7dfa7" stroke-width="2" opacity=".65"/>
 	<path d="M334 333c-4-78 20-112 83-121-2 49-18 89-58 120m267 1c4-78-20-112-83-121 2 49 18 89 58 120" fill="none" stroke="#efcf83" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
 	<path d="M359 334c31-30 70-43 115-41m127 41c-31-30-70-43-115-41" fill="none" stroke="#e8c477" stroke-width="10" stroke-linecap="round"/>
+	<path d="M358 329c19-20 37-31 57-39m187 39c-19-20-37-31-57-39" fill="none" stroke="#fff0bd" stroke-width="3" stroke-linecap="round" opacity=".72"/>
 	<circle cx="480" cy="293" r="10" fill="#fff3c9"/>
 	<path d="M480 277v32" stroke="#fff3c9" stroke-width="3" opacity=".8"/>
+	<path d="M462 281c-17-20 17-28 4-45 26 15 8 27 3 39m23 6c16-16-3-24 13-38 12 21 3 31-4 42" fill="none" stroke="#f7e9ca" stroke-width="5" stroke-linecap="round" opacity=".32"/>
 	<path d="M230 520h500" stroke="#e8d0a2" stroke-width="3" opacity=".42"/>
 	<g fill="#f4dcaa" opacity=".55">
 		<circle cx="174" cy="207" r="3"/><circle cx="787" cy="194" r="3"/><circle cx="217" cy="462" r="2"/>
