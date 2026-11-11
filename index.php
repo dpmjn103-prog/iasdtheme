@@ -47,6 +47,7 @@ $welcome_logo_id = get_theme_mod( 'custom_logo' );
 	<?php get_template_part( 'template-parts/study-method' ); ?>
 	<?php get_template_part( 'template-parts/saturday-program' ); ?>
 	<?php get_template_part( 'template-parts/community-updates' ); ?>
+	<?php get_template_part( 'template-parts/gallery' ); ?>
 
 	<section class="page-content page-content--wide" aria-labelledby="index-title">
 		<header class="content-intro">

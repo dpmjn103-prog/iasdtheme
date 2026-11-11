@@ -17,6 +17,7 @@ Tema de WordPress adaptable y accesible para presentar el Centro de Estudios IAS
 - **Método de estudio:** principios, pasos y bienvenida están en `template-parts/study-method.php`. Si el enlace del botón “Conoce cómo estudiamos” se deja vacío, lleva a esta sección.
 - **Programa de los sábados:** el horario y sus actividades se editan en `template-parts/saturday-program.php`.
 - **Novedades y comunidad:** proyectos, campañas y enlaces para orar o contactar están en `template-parts/community-updates.php`.
+- **Galería:** las fotos de servicio, almuerzos y bautismo están en `template-parts/gallery.php` y se muestran en una cuadrícula adaptable.
 - **Ubicación:** la sección de visita incluye mapa, dirección, teléfono, correo y horario; sus datos se editan en `template-parts/location.php`. Si el enlace del botón “Visítanos este sábado” se deja vacío, lleva a esta sección.
 - **Pie de página:** edita la información, datos de contacto, redes sociales y verso bíblico.
 - **Menús:** crea y asigna los menús principal y Explorar en **Apariencia → Menús** o en el editor de navegación de tu instalación.
