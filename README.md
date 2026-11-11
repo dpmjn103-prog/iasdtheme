@@ -18,6 +18,7 @@ Tema de WordPress adaptable y accesible para presentar el Centro de Estudios IAS
 - **Programa de los sábados:** el horario y sus actividades se editan en `template-parts/saturday-program.php`.
 - **Novedades y comunidad:** proyectos, campañas y enlaces para orar o contactar están en `template-parts/community-updates.php`.
 - **Galería:** las fotos de servicio, almuerzos y bautismo están en `template-parts/gallery.php` y se muestran en una cuadrícula adaptable.
+- **Nebulosa de Orión:** una sección decorativa combina el logo IASD con una imagen de ESO; se edita en `template-parts/orion-nebula.php`.
 - **Ubicación:** la sección de visita incluye mapa, dirección, teléfono, correo y horario; sus datos se editan en `template-parts/location.php`. Si el enlace del botón “Visítanos este sábado” se deja vacío, lleva a esta sección.
 - **Pie de página:** edita la información, datos de contacto, redes sociales y verso bíblico.
 - **Menús:** si no asignas un menú principal, el encabezado muestra Inicio, Nosotros, Ministerios, Actividades, Donaciones y Contacto. Los enlaces llevan a las secciones disponibles; Donaciones abre un correo para solicitar información. Puedes personalizar el menú en **Apariencia → Menús** o en el editor de navegación de tu instalación.

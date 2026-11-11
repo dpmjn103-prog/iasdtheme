@@ -37,6 +37,7 @@ get_header();
 	<?php get_template_part( 'template-parts/saturday-program' ); ?>
 	<?php get_template_part( 'template-parts/community-updates' ); ?>
 	<?php get_template_part( 'template-parts/gallery' ); ?>
+	<?php get_template_part( 'template-parts/orion-nebula' ); ?>
 
 	<section class="page-content page-content--wide" aria-labelledby="index-title">
 		<header class="content-intro">
