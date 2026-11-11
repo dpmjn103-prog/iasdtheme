@@ -58,7 +58,7 @@
 		<div class="footer-bottom">
 			<div class="container">
 				<p>&copy; <?php echo esc_html( gmdate( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>.</p>
-				<p><?php esc_html_e( 'Un espacio para aprender, compartir y crecer en la fe.', 'centro-estudios-iasd' ); ?></p>
+				<p><?php esc_html_e( 'Un espacio para aprender, compartir y crecer en la fe. TEST1.1.0', 'centro-estudios-iasd' ); ?></p>
 			</div>
 		</div>
 	</footer>
