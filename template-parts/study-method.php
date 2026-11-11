@@ -103,8 +103,8 @@
 			<span class="study-welcome__mark" aria-hidden="true">“</span>
 			<div>
 				<h3><?php esc_html_e( 'Toda persona es bienvenida', 'centro-estudios-iasd' ); ?></h3>
-				<p><?php esc_html_e( 'Niños, jóvenes, adultos, personas mayores, profesionales, maestros, médicos, ingenieros, y también quienes nunca han abierto una Biblia. Aquí no hay nivel mínimo.', 'centro-estudios-iasd' ); ?></p>
-				<p class="study-welcome__closing"><?php esc_html_e( 'Tampoco hay espectadores: todos somos parte de la conversación.', 'centro-estudios-iasd' ); ?></p>
+				<p><?php esc_html_e( 'Niños, jóvenes, adultos, personas mayores, profesionales, sin importar el nivel academico o social, y también quienes nunca han abierto una Biblia. Aquí no hay nivel mínimo.', 'centro-estudios-iasd' ); ?></p>
+				<p class="study-welcome__closing"><?php esc_html_e( 'Tampoco hay espectadores: todos somos parte de la conversación."', 'centro-estudios-iasd' ); ?></p>
 			</div>
 		</aside>
 	</div>
