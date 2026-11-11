@@ -103,7 +103,7 @@ function centro_estudios_iasd_default( $setting ) {
 		'hero_title'            => __( 'Un espacio para crecer en la Palabra.', 'centro-estudios-iasd' ),
 		'hero_description'     => __( 'Estudiamos la Biblia, fortalecemos nuestra fe y compartimos esperanza en comunidad.', 'centro-estudios-iasd' ),
 		'cta_visit_text'        => __( 'Visítanos este sábado', 'centro-estudios-iasd' ),
-		'cta_visit_url'         => '',
+		'cta_visit_url'         => '#ubicacion',
 		'cta_visit_style'       => 'solid',
 		'cta_study_text'        => __( 'Conoce cómo estudiamos', 'centro-estudios-iasd' ),
 		'cta_study_url'         => '',
@@ -450,5 +450,9 @@ add_action( 'wp_head', 'centro_estudios_iasd_customizer_css' );
  */
 function centro_estudios_iasd_cta_url( $setting ) {
 	$url = get_theme_mod( $setting, centro_estudios_iasd_default( $setting ) );
+	if ( ! $url && 'cta_visit_url' === $setting ) {
+		return esc_url( home_url( '/#ubicacion' ) );
+	}
+
 	return $url ? esc_url( $url ) : esc_url( home_url( '/' ) );
 }
