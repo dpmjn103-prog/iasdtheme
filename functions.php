@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'CENTRO_ESTUDIOS_IASD_VERSION', '1.0.0' );
+define( 'CENTRO_ESTUDIOS_IASD_VERSION', '1.0.1' );
 
 /**
  * Register theme features and navigation locations.
@@ -63,6 +63,23 @@ function centro_estudios_iasd_setup() {
 	);
 }
 add_action( 'after_setup_theme', 'centro_estudios_iasd_setup' );
+
+/**
+ * Display the default primary navigation when no custom menu is assigned.
+ */
+function centro_estudios_iasd_primary_menu_fallback() {
+	$home_current_class = is_front_page() ? ' class="current-menu-item"' : '';
+	?>
+	<ul id="primary-menu-list">
+		<li<?php echo $home_current_class; ?>><a href="<?php echo esc_url( home_url( '/' ) ); ?>"<?php echo is_front_page() ? ' aria-current="page"' : ''; ?>><?php esc_html_e( 'Inicio', 'centro-estudios-iasd' ); ?></a></li>
+		<li><a href="<?php echo esc_url( home_url( '/#nosotros' ) ); ?>"><?php esc_html_e( 'Nosotros', 'centro-estudios-iasd' ); ?></a></li>
+		<li><a href="<?php echo esc_url( home_url( '/#comunidad' ) ); ?>"><?php esc_html_e( 'Ministerios', 'centro-estudios-iasd' ); ?></a></li>
+		<li><a href="<?php echo esc_url( home_url( '/#programa-sabados' ) ); ?>"><?php esc_html_e( 'Actividades', 'centro-estudios-iasd' ); ?></a></li>
+		<li><a href="<?php echo esc_url( 'mailto:centrodestudioiasd@gmail.com?subject=Informaci%C3%B3n%20sobre%20donaciones' ); ?>"><?php esc_html_e( 'Donaciones', 'centro-estudios-iasd' ); ?></a></li>
+		<li><a href="<?php echo esc_url( home_url( '/#ubicacion' ) ); ?>"><?php esc_html_e( 'Contacto', 'centro-estudios-iasd' ); ?></a></li>
+	</ul>
+	<?php
+}
 
 /**
  * Enqueue theme assets.

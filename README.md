@@ -20,7 +20,7 @@ Tema de WordPress adaptable y accesible para presentar el Centro de Estudios IAS
 - **Galería:** las fotos de servicio, almuerzos y bautismo están en `template-parts/gallery.php` y se muestran en una cuadrícula adaptable.
 - **Ubicación:** la sección de visita incluye mapa, dirección, teléfono, correo y horario; sus datos se editan en `template-parts/location.php`. Si el enlace del botón “Visítanos este sábado” se deja vacío, lleva a esta sección.
 - **Pie de página:** edita la información, datos de contacto, redes sociales y verso bíblico.
-- **Menús:** crea y asigna los menús principal y Explorar en **Apariencia → Menús** o en el editor de navegación de tu instalación.
+- **Menús:** si no asignas un menú principal, el encabezado muestra Inicio, Nosotros, Ministerios, Actividades, Donaciones y Contacto. Los enlaces llevan a las secciones disponibles; Donaciones abre un correo para solicitar información. Puedes personalizar el menú en **Apariencia → Menús** o en el editor de navegación de tu instalación.
 - **Secciones de portada:** edita la página establecida como portada y agrega, ordena o elimina bloques de Gutenberg debajo del hero.
 
 Los enlaces de los botones que se dejen vacíos llevan a la página de inicio. La animación del anuncio se pausa al pasar el cursor o enfocar el banner y se desactiva para usuarios que prefieren movimiento reducido.

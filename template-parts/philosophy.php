@@ -5,7 +5,7 @@
  * @package Centro_Estudios_IASD
  */
 ?>
-<section class="philosophy-section" aria-labelledby="philosophy-title">
+<section class="philosophy-section" id="nosotros" aria-labelledby="philosophy-title">
 	<div class="philosophy-section__inner">
 		<header class="philosophy-section__heading">
 			<p class="philosophy-section__eyebrow"><?php esc_html_e( 'Nuestra filosofía', 'centro-estudios-iasd' ); ?></p>

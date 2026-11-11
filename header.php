@@ -28,17 +28,21 @@
 	<header class="site-header">
 		<div class="header-inner">
 			<div class="site-branding">
-				<a class="site-branding__logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<img
-						class="site-branding__logo-image"
-						src="<?php echo esc_url( get_theme_file_uri( '/assets/images/iasd-logo.jpeg' ) ); ?>"
-						alt=""
-						width="64"
-						height="64"
-						fetchpriority="high"
-						decoding="async"
-					>
-					<span class="screen-reader-text"><?php bloginfo( 'name' ); ?></span>
+				<a class="site-branding__home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<span class="site-branding__logo">
+						<img
+							class="site-branding__logo-image"
+							src="<?php echo esc_url( get_theme_file_uri( '/assets/images/iasd-logo.jpeg' ) ); ?>"
+							alt=""
+							width="64"
+							height="64"
+							fetchpriority="high"
+							decoding="async"
+						>
+					</span>
+					<span class="site-branding__text">
+						<span class="site-title"><?php esc_html_e( 'Centro de Estudio IASD', 'centro-estudios-iasd' ); ?></span>
+					</span>
 				</a>
 			</div>
 
@@ -54,7 +58,7 @@
 						'theme_location' => 'primary',
 						'container'      => false,
 						'menu_id'        => 'primary-menu-list',
-						'fallback_cb'    => false,
+						'fallback_cb'    => 'centro_estudios_iasd_primary_menu_fallback',
 					)
 				);
 				?>
