@@ -3,7 +3,7 @@ Theme Name: Centro de Estudios IASD
 Theme URI: https://example.com/centro-estudios-iasd
 Author: Equipo de desarrollo y diseño del IASD
 Description: Un tema accesible y flexible para el Centro de Estudios IASD, con anuncios configurables, portada editorial y contenido Gutenberg.
-Version: 1.0.1
+Version: 1.0.2
 Requires at least: 6.4
 Tested up to: 6.8
 Requires PHP: 7.4
@@ -93,6 +93,43 @@ button,
 
 .site-shell {
 	min-height: 100vh;
+}
+
+body.site-intro-active {
+	overflow: hidden;
+}
+
+.site-intro {
+	position: fixed;
+	z-index: 3000;
+	inset: 0;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+	background: #000;
+	opacity: 1;
+	animation: site-intro-fallback 20s forwards;
+	transition: opacity 450ms ease, visibility 450ms ease;
+}
+
+.site-intro.is-hidden {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.site-intro__video {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@keyframes site-intro-fallback {
+	to {
+		visibility: hidden;
+		opacity: 0;
+	}
 }
 
 .announcement {
@@ -286,68 +323,6 @@ button,
 	background-position: center;
 	background-size: cover;
 	color: var(--color-white);
-}
-
-.welcome-screen {
-	position: fixed;
-	z-index: 2000;
-	inset: 0;
-	display: grid;
-	place-items: center;
-	background: linear-gradient(145deg, #003b63, #0067a5);
-	animation: welcome-screen-exit 0.65s ease-in 1.45s forwards;
-}
-
-.welcome-screen__content {
-	display: grid;
-	justify-items: center;
-	gap: 1.25rem;
-	padding: 2rem;
-	text-align: center;
-	animation: welcome-logo-appear 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) both;
-}
-
-.welcome-screen__logo {
-	width: auto;
-	max-width: min(70vw, 360px);
-	max-height: 35vh;
-	object-fit: contain;
-}
-
-.welcome-screen__fallback {
-	color: var(--color-white);
-	font-family: var(--font-display);
-	font-size: clamp(1.7rem, 5vw, 2.8rem);
-	font-weight: 700;
-	line-height: 1.15;
-}
-
-.welcome-screen__greeting {
-	margin: 0;
-	color: var(--color-white);
-	font-size: 0.8rem;
-	font-weight: 700;
-	letter-spacing: 0.2em;
-	text-transform: uppercase;
-}
-
-@keyframes welcome-logo-appear {
-	from {
-		opacity: 0;
-		transform: translateY(1rem) scale(0.92);
-	}
-
-	to {
-		opacity: 1;
-		transform: translateY(0) scale(1);
-	}
-}
-
-@keyframes welcome-screen-exit {
-	to {
-		visibility: hidden;
-		opacity: 0;
-	}
 }
 
 .hero::after {
@@ -2170,7 +2145,7 @@ button,
 		scroll-behavior: auto;
 	}
 
-	.welcome-screen {
+	.site-intro {
 		display: none;
 	}
 

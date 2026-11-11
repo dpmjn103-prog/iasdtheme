@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'CENTRO_ESTUDIOS_IASD_VERSION', '1.0.1' );
+define( 'CENTRO_ESTUDIOS_IASD_VERSION', '1.0.2' );
 
 /**
  * Register theme features and navigation locations.

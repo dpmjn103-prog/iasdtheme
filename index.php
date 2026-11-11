@@ -6,19 +6,8 @@
  */
 
 get_header();
-$welcome_logo_id = get_theme_mod( 'custom_logo' );
 ?>
 <main id="site-content" class="index-page">
-	<div class="welcome-screen" aria-hidden="true">
-		<div class="welcome-screen__content">
-			<?php if ( $welcome_logo_id ) : ?>
-				<?php echo wp_get_attachment_image( $welcome_logo_id, 'full', false, array( 'class' => 'welcome-screen__logo', 'alt' => '' ) ); ?>
-			<?php else : ?>
-				<span class="welcome-screen__fallback"><?php esc_html_e( 'Iglesia Adventista del Séptimo Día', 'centro-estudios-iasd' ); ?></span>
-			<?php endif; ?>
-			<p class="welcome-screen__greeting"><?php esc_html_e( 'Bienvenidos', 'centro-estudios-iasd' ); ?></p>
-		</div>
-	</div>
 	<section class="hero" aria-labelledby="hero-title">
 		<div class="hero__content">
 			<p class="hero__eyebrow"><?php echo esc_html( get_theme_mod( 'hero_eyebrow', centro_estudios_iasd_default( 'hero_eyebrow' ) ) ); ?></p>
