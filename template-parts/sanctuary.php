@@ -46,7 +46,7 @@
 			<span class="sanctuary-section__hope-mark" aria-hidden="true">
 				<svg viewBox="0 0 24 24" focusable="false"><path d="m12 2.8 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 2.8Z" /></svg>
 			</span>
-			<p><strong><?php esc_html_e( 'Nuestra esperanza es Jesús.', 'centro-estudios-iasd' ); ?></strong> <?php esc_html_e( 'Creemos que él ministra como Sumo Sacerdote en el santuario celestial y que su obra final de juicio, antes de su regreso, manifiesta la justicia y misericordia de Dios. La salvación y la confianza del creyente descansan en Cristo.', 'centro-estudios-iasd' ); ?></p>
+			<p><strong><?php esc_html_e( 'Nuestra esperanza es Jesús.', 'centro-estudios-iasd' ); ?></strong> <?php esc_html_e( 'Daniel 8:14; Hebreos 4:14–16; Hebreos 8:1–2 (RVR1960).', 'centro-estudios-iasd' ); ?></p>
 		</aside>
 
 		<details class="sanctuary-scriptures">
