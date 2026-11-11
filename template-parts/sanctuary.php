@@ -47,7 +47,6 @@
 				<svg viewBox="0 0 24 24" focusable="false"><path d="m12 2.8 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 2.8Z" /></svg>
 			</span>
 			<p><strong><?php esc_html_e( 'Nuestra esperanza es Jesús.', 'centro-estudios-iasd' ); ?></strong> <?php esc_html_e( 'Como adventistas, estudiamos el santuario porque sus símbolos y servicios revelan el plan de salvación y el ministerio de Jesús como nuestro Sumo Sacerdote. Comprenderlo fortalece nuestra confianza en su gracia y nuestra esperanza en su regreso.', 'centro-estudios-iasd' ); ?></p>
-			<cite><?php esc_html_e( 'Juan 14:1–3; Hechos 1:11; Tito 2:13; Apocalipsis 1:7 · RVR1960', 'centro-estudios-iasd' ); ?></cite>
 		</aside>
 
 		<details class="sanctuary-scriptures">
