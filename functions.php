@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'CENTRO_ESTUDIOS_IASD_VERSION', '1.0.3' );
+define( 'CENTRO_ESTUDIOS_IASD_VERSION', '1.0.4' );
 
 /**
  * Register theme features and navigation locations.
@@ -72,11 +72,40 @@ function centro_estudios_iasd_primary_menu_fallback() {
 	?>
 	<ul id="primary-menu-list">
 		<li<?php echo $home_current_class; ?>><a href="<?php echo esc_url( home_url( '/' ) ); ?>"<?php echo is_front_page() ? ' aria-current="page"' : ''; ?>><?php esc_html_e( 'Inicio', 'centro-estudios-iasd' ); ?></a></li>
-		<li><a href="<?php echo esc_url( home_url( '/#nosotros' ) ); ?>"><?php esc_html_e( 'Nosotros', 'centro-estudios-iasd' ); ?></a></li>
-		<li><a href="<?php echo esc_url( home_url( '/#comunidad' ) ); ?>"><?php esc_html_e( 'Ministerios', 'centro-estudios-iasd' ); ?></a></li>
-		<li><a href="<?php echo esc_url( home_url( '/#programa-sabados' ) ); ?>"><?php esc_html_e( 'Actividades', 'centro-estudios-iasd' ); ?></a></li>
+		<li class="menu-item-has-children">
+			<a href="<?php echo esc_url( home_url( '/#nosotros' ) ); ?>"><?php esc_html_e( 'Nosotros', 'centro-estudios-iasd' ); ?></a>
+			<ul class="sub-menu">
+				<li><a href="<?php echo esc_url( home_url( '/#nosotros' ) ); ?>"><?php esc_html_e( 'Quiénes somos', 'centro-estudios-iasd' ); ?></a></li>
+				<li><a href="<?php echo esc_url( home_url( '/#metodo-estudio' ) ); ?>"><?php esc_html_e( 'Cómo estudiamos', 'centro-estudios-iasd' ); ?></a></li>
+				<li><a href="<?php echo esc_url( home_url( '/#galeria' ) ); ?>"><?php esc_html_e( 'Testimonios', 'centro-estudios-iasd' ); ?></a></li>
+			</ul>
+		</li>
+		<li class="menu-item-has-children">
+			<a href="<?php echo esc_url( home_url( '/#metodo-estudio' ) ); ?>"><?php esc_html_e( 'Ministerios', 'centro-estudios-iasd' ); ?></a>
+			<ul class="sub-menu">
+				<li><a href="<?php echo esc_url( home_url( '/#metodo-estudio' ) ); ?>"><?php esc_html_e( 'Estudio Bíblico', 'centro-estudios-iasd' ); ?></a></li>
+				<li><a href="<?php echo esc_url( 'mailto:centrodestudioiasd@gmail.com?subject=Petici%C3%B3n%20de%20oraci%C3%B3n' ); ?>"><?php esc_html_e( 'Oración', 'centro-estudios-iasd' ); ?></a></li>
+				<li><a href="<?php echo esc_url( home_url( '/#comunidad' ) ); ?>"><?php esc_html_e( 'Preguntas frecuentes', 'centro-estudios-iasd' ); ?></a></li>
+			</ul>
+		</li>
+		<li class="menu-item-has-children">
+			<a href="<?php echo esc_url( home_url( '/#programa-sabados' ) ); ?>"><?php esc_html_e( 'Actividades', 'centro-estudios-iasd' ); ?></a>
+			<ul class="sub-menu">
+				<li><a href="<?php echo esc_url( home_url( '/#programa-sabados' ) ); ?>"><?php esc_html_e( 'Programa del Sábado', 'centro-estudios-iasd' ); ?></a></li>
+				<li><a href="<?php echo esc_url( home_url( '/#galeria' ) ); ?>"><?php esc_html_e( 'Galería', 'centro-estudios-iasd' ); ?></a></li>
+				<li><a href="<?php echo esc_url( home_url( '/#comunidad' ) ); ?>"><?php esc_html_e( 'A quién apoyamos', 'centro-estudios-iasd' ); ?></a></li>
+				<li><a href="<?php echo esc_url( home_url( '/#comunidad' ) ); ?>"><?php esc_html_e( 'Lo nuevo', 'centro-estudios-iasd' ); ?></a></li>
+			</ul>
+		</li>
 		<li><a href="<?php echo esc_url( 'mailto:centrodestudioiasd@gmail.com?subject=Informaci%C3%B3n%20sobre%20donaciones' ); ?>"><?php esc_html_e( 'Donaciones', 'centro-estudios-iasd' ); ?></a></li>
-		<li><a href="<?php echo esc_url( home_url( '/#ubicacion' ) ); ?>"><?php esc_html_e( 'Contacto', 'centro-estudios-iasd' ); ?></a></li>
+		<li class="menu-item-has-children">
+			<a href="<?php echo esc_url( home_url( '/#ubicacion' ) ); ?>"><?php esc_html_e( 'Contacto', 'centro-estudios-iasd' ); ?></a>
+			<ul class="sub-menu">
+				<li><a href="<?php echo esc_url( home_url( '/#ubicacion' ) ); ?>"><?php esc_html_e( 'Visítanos', 'centro-estudios-iasd' ); ?></a></li>
+				<li><a href="<?php echo esc_url( 'mailto:centrodestudioiasd@gmail.com?subject=Petici%C3%B3n%20de%20oraci%C3%B3n' ); ?>"><?php esc_html_e( 'Petición de Oración', 'centro-estudios-iasd' ); ?></a></li>
+				<li><a href="<?php echo esc_url( 'mailto:centrodestudioiasd@gmail.com?subject=Contacto%20-%20IASD%20Centro%20de%20Estudio' ); ?>"><?php esc_html_e( 'Escríbenos', 'centro-estudios-iasd' ); ?></a></li>
+			</ul>
+		</li>
 	</ul>
 	<?php
 }
