@@ -34,6 +34,7 @@ get_header();
 
 	<?php get_template_part( 'template-parts/philosophy' ); ?>
 	<?php get_template_part( 'template-parts/saturday-program' ); ?>
+	<?php get_template_part( 'template-parts/community-updates' ); ?>
 
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : ?>

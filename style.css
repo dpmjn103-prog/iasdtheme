@@ -995,6 +995,232 @@ button,
 	color: #805711;
 }
 
+.community-section {
+	position: relative;
+	overflow: hidden;
+	padding: clamp(4.5rem, 9vw, 7rem) 1.5rem;
+	background:
+		radial-gradient(ellipse at 100% 100%, rgba(232, 182, 92, 0.13), transparent 35%),
+		#fff;
+}
+
+.community-section__inner {
+	width: min(100%, var(--content-width));
+	margin-inline: auto;
+}
+
+.community-section__heading {
+	max-width: 760px;
+	margin: 0 auto clamp(2.5rem, 5vw, 3.5rem);
+	text-align: center;
+}
+
+.community-section__eyebrow {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.6rem;
+	margin: 0 0 0.85rem;
+	color: var(--color-blue);
+	font-size: 0.75rem;
+	font-weight: 800;
+	letter-spacing: 0.17em;
+	text-transform: uppercase;
+}
+
+.community-section__eyebrow::before,
+.community-section__eyebrow::after {
+	width: 1.5rem;
+	height: 1px;
+	background: var(--color-gold);
+	content: "";
+}
+
+.community-section__heading h2 {
+	margin: 0;
+	color: var(--color-blue-dark);
+	font-family: var(--font-display);
+	font-size: clamp(2.1rem, 4.5vw, 3.45rem);
+	font-weight: 500;
+	letter-spacing: -0.04em;
+	line-height: 1.1;
+}
+
+.community-section__heading > p:last-child {
+	margin: 1rem 0 0;
+	color: var(--color-muted);
+	font-size: 1.05rem;
+}
+
+.community-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.1rem;
+}
+
+.community-card {
+	position: relative;
+	display: flex;
+	min-width: 0;
+	min-height: 16rem;
+	flex-direction: column;
+	align-items: flex-start;
+	overflow: hidden;
+	padding: clamp(1.35rem, 3vw, 1.8rem);
+	border: 1px solid rgba(0, 68, 107, 0.1);
+	border-radius: 0.95rem;
+	background: #fff;
+	box-shadow: 0 12px 34px rgba(0, 50, 80, 0.06);
+	color: inherit;
+	text-decoration: none;
+	transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.community-card::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 3px;
+	background: linear-gradient(90deg, var(--color-blue), #4d86a5);
+	content: "";
+}
+
+.community-card--campaigns::before,
+.community-card--prayer::before {
+	background: linear-gradient(90deg, #c18b32, #e8b65c);
+}
+
+.community-card:hover {
+	transform: translateY(-5px);
+	border-color: rgba(0, 103, 165, 0.24);
+	box-shadow: 0 20px 42px rgba(0, 50, 80, 0.12);
+}
+
+.community-card:focus-visible {
+	outline: 3px solid var(--color-gold);
+	outline-offset: 3px;
+}
+
+.community-card__top {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	gap: 0.8rem;
+	margin-bottom: 1rem;
+}
+
+.community-card__icon {
+	display: grid;
+	width: 2.8rem;
+	height: 2.8rem;
+	flex: 0 0 2.8rem;
+	place-items: center;
+	border: 1px solid rgba(0, 103, 165, 0.12);
+	border-radius: 0.85rem;
+	background: #eaf4f9;
+	color: var(--color-blue);
+}
+
+.community-card--campaigns .community-card__icon,
+.community-card--prayer .community-card__icon {
+	border-color: rgba(193, 139, 50, 0.2);
+	background: #fbf3e3;
+	color: #96650e;
+}
+
+.community-card__icon svg {
+	width: 1.35rem;
+	height: 1.35rem;
+	fill: none;
+	stroke: currentColor;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-width: 1.6;
+}
+
+.community-card__label {
+	color: var(--color-muted);
+	font-size: 0.74rem;
+	font-weight: 800;
+	letter-spacing: 0.11em;
+	text-transform: uppercase;
+}
+
+.community-card h3 {
+	margin: 0;
+	color: var(--color-blue-dark);
+	font-family: var(--font-display);
+	font-size: clamp(1.35rem, 2.4vw, 1.65rem);
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.community-card > p {
+	margin: 0.7rem 0 1.25rem;
+	color: var(--color-muted);
+	font-size: 0.93rem;
+	line-height: 1.7;
+}
+
+.community-card__link {
+	display: inline-flex;
+	max-width: 100%;
+	align-items: center;
+	gap: 0.5rem;
+	margin-top: auto;
+	color: var(--color-blue);
+	font-size: 0.87rem;
+	font-weight: 750;
+	text-decoration: none;
+	overflow-wrap: anywhere;
+}
+
+.community-card__link > span {
+	flex: 0 0 auto;
+	font-size: 1.1rem;
+	transition: transform 180ms ease;
+}
+
+.community-card:hover .community-card__link > span {
+	transform: translate(3px, -2px);
+}
+
+.community-card--featured {
+	grid-row: span 2;
+	min-height: 100%;
+	padding: clamp(1.6rem, 4vw, 2.3rem);
+	background:
+		radial-gradient(ellipse at 100% 0, rgba(0, 103, 165, 0.1), transparent 45%),
+		#fff;
+}
+
+.community-card--featured h3 {
+	font-size: clamp(1.7rem, 3vw, 2.2rem);
+}
+
+.community-card--featured > p {
+	max-width: 38rem;
+	margin-top: 0.9rem;
+	font-size: 1rem;
+}
+
+.community-card--featured .community-card__link {
+	padding: 0.7rem 0.95rem;
+	border-radius: 999px;
+	background: var(--color-blue);
+	color: #fff;
+}
+
+.community-card--featured:hover .community-card__link {
+	background: var(--color-blue-dark);
+	color: #fff;
+}
+
+.community-card--prayer,
+.community-card--contact {
+	cursor: pointer;
+}
+
 .location-section {
 	position: relative;
 	overflow: hidden;
@@ -1361,6 +1587,14 @@ button,
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 
+	.community-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.community-card--featured {
+		grid-row: auto;
+	}
+
 	.location-section__layout {
 		grid-template-columns: 1fr;
 	}
@@ -1455,6 +1689,18 @@ button,
 	}
 
 	.saturday-program__card {
+		min-height: 0;
+	}
+
+	.community-section {
+		padding-inline: 1rem;
+	}
+
+	.community-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.community-card {
 		min-height: 0;
 	}
 
