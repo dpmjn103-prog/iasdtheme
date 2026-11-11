@@ -50,19 +50,16 @@
 		</aside>
 
 		<details class="sanctuary-scriptures">
-			<summary><?php esc_html_e( 'Citas y resúmenes bíblicos · referencias RVR1960', 'centro-estudios-iasd' ); ?></summary>
+			<summary><?php esc_html_e( 'Citas bíblicas · Reina-Valera 1960', 'centro-estudios-iasd' ); ?></summary>
 			<div class="sanctuary-scriptures__content">
 				<blockquote>
-					<p><?php esc_html_e( 'La visión anuncia que, al final del periodo señalado, el santuario sería restaurado y vindicado.', 'centro-estudios-iasd' ); ?></p>
-					<cite><?php esc_html_e( 'Daniel 8:14 · referencia RVR1960; resumen en palabras propias', 'centro-estudios-iasd' ); ?></cite>
+					<cite><?php esc_html_e( 'Daniel 8:14 · RVR1960', 'centro-estudios-iasd' ); ?></cite>
 				</blockquote>
 				<blockquote>
-					<p><?php esc_html_e( 'Jesús, el Hijo de Dios, es nuestro gran Sumo Sacerdote. Comprende nuestras debilidades y nos invita a acercarnos a Dios con confianza para recibir misericordia y ayuda.', 'centro-estudios-iasd' ); ?></p>
-					<cite><?php esc_html_e( 'Hebreos 4:14–16 · referencia RVR1960; resumen en palabras propias', 'centro-estudios-iasd' ); ?></cite>
+					<cite><?php esc_html_e( 'Hebreos 4:14–16 · RVR1960', 'centro-estudios-iasd' ); ?></cite>
 				</blockquote>
 				<blockquote>
-					<p><?php esc_html_e( 'Cristo ministra en el santuario celestial, el verdadero tabernáculo establecido por Dios y no por seres humanos.', 'centro-estudios-iasd' ); ?></p>
-					<cite><?php esc_html_e( 'Hebreos 8:1–2 · referencia RVR1960; resumen en palabras propias', 'centro-estudios-iasd' ); ?></cite>
+					<cite><?php esc_html_e( 'Hebreos 8:1–2 · RVR1960', 'centro-estudios-iasd' ); ?></cite>
 				</blockquote>
 			</div>
 		</details>
