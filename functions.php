@@ -193,7 +193,7 @@ function centro_estudios_iasd_default( $setting ) {
 		'footer_instagram'      => '',
 		'footer_youtube'        => '',
 		'footer_verse'          => __( 'Acuérdate del día de reposo para santificarlo.', 'centro-estudios-iasd' ),
-		'footer_verse_reference'=> __( 'Éxodo 20:8', 'centro-estudios-iasd' ),
+		'footer_verse_reference'=> __( 'Éxodo 20:8 (Versión RV-1960)', 'centro-estudios-iasd' ),
 	);
 
 	return isset( $defaults[ $setting ] ) ? $defaults[ $setting ] : '';
