@@ -7,7 +7,7 @@
 ?>
 <section class="study-method" id="metodo-estudio" aria-labelledby="study-method-title">
 	<div class="study-method__inner">
-		<header class="study-method__heading">
+		<header class="study-method__heading" id="estudio-biblico">
 			<p class="study-method__eyebrow"><?php esc_html_e( 'Nuestro método', 'centro-estudios-iasd' ); ?></p>
 			<h2 id="study-method-title"><?php esc_html_e( 'Cómo estudiamos la Biblia', 'centro-estudios-iasd' ); ?></h2>
 			<p class="study-method__lead"><?php esc_html_e( 'No tenemos una persona que habla y todos escuchan. Tenemos una mesa, un texto y una conversación honesta.', 'centro-estudios-iasd' ); ?></p>

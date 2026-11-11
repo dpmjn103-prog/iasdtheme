@@ -14,7 +14,7 @@
 		</header>
 
 		<div class="community-grid">
-			<article class="community-card community-card--featured">
+			<article class="community-card community-card--featured" id="a-quien-apoyamos">
 				<div class="community-card__top">
 					<span class="community-card__icon" aria-hidden="true">
 						<svg viewBox="0 0 24 24" focusable="false"><path d="M4 4.5a2.5 2.5 0 0 1 2.5-2.5H21v17H6.5A2.5 2.5 0 0 0 4 21.5v-17Z" /><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H21M8 7h9M8 10h6" /></svg>
@@ -29,7 +29,7 @@
 				</a>
 			</article>
 
-			<article class="community-card community-card--campaigns">
+			<article class="community-card community-card--campaigns" id="lo-nuevo">
 				<div class="community-card__top">
 					<span class="community-card__icon" aria-hidden="true">
 						<svg viewBox="0 0 24 24" focusable="false"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" /><path d="M8 7h8M8 11h8" /></svg>
@@ -40,7 +40,7 @@
 				<p><?php esc_html_e( 'Series especiales de estudio abiertas al público, con temas centrales de la Biblia. Fechas y detalles se anuncian por nuestras redes.', 'centro-estudios-iasd' ); ?></p>
 			</article>
 
-			<a class="community-card community-card--prayer" href="mailto:centrodestudioiasd@gmail.com?subject=Quiero%20que%20oren%20por%20mi">
+			<a class="community-card community-card--prayer" id="peticion-oracion" href="mailto:centrodestudioiasd@gmail.com?subject=Quiero%20que%20oren%20por%20mi">
 				<div class="community-card__top">
 					<span class="community-card__icon" aria-hidden="true">
 						<svg viewBox="0 0 24 24" focusable="false"><path d="M12 21s-8-4.4-8-11a4.5 4.5 0 0 1 8-2.9A4.5 4.5 0 0 1 20 10c0 6.6-8 11-8 11Z" /><path d="M12 8v6M9 11h6" /></svg>

@@ -21,7 +21,8 @@ Tema de WordPress adaptable y accesible para presentar el Centro de Estudios IAS
 - **Nebulosa de Orión:** una sección decorativa combina el logo IASD con una imagen de ESO; se edita en `template-parts/orion-nebula.php`.
 - **Ubicación:** la sección de visita incluye mapa, dirección, teléfono, correo y horario; sus datos se editan en `template-parts/location.php`. Si el enlace del botón “Visítanos este sábado” se deja vacío, lleva a esta sección.
 - **Pie de página:** edita la información, datos de contacto, redes sociales y verso bíblico.
-- **Menús:** si no asignas un menú principal, el encabezado muestra Inicio, Nosotros, Ministerios, Actividades, Donaciones y Contacto, con submenús desplegables. En móviles, los submenús se abren con su botón. Puedes personalizar el menú en **Apariencia → Menús** o en el editor de navegación de tu instalación.
+- **Menús:** si no asignas un menú principal, el encabezado muestra Inicio, Nosotros, Ministerios, Actividades, Donaciones y Contacto, con submenús desplegables y enlaces a sus secciones. En móvil, abre cada submenú con el botón de flecha. Puedes personalizar la navegación en **Apariencia → Menús** o en el editor de navegación de tu instalación.
+- **Testimonios y preguntas frecuentes:** la invitación a compartir experiencias y las respuestas para visitantes están en `template-parts/testimonials.php` y `template-parts/faq.php`.
 - **Secciones de portada:** edita la página establecida como portada y agrega, ordena o elimina bloques de Gutenberg debajo del hero.
 
 Los enlaces de los botones que se dejen vacíos llevan a la página de inicio. La animación del anuncio se pausa al pasar el cursor o enfocar el banner y se desactiva para usuarios que prefieren movimiento reducido.
