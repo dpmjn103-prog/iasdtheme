@@ -6,9 +6,9 @@
  */
 
 $location_address = __( '3ª Avenida, Ciudad de Guatemala, Zona 10, Guatemala', 'centro-estudios-iasd' );
-$location_query   = rawurlencode( $location_address );
+$location_query   = rawurlencode( '14.5945581,-90.5144678' );
 $map_embed_url    = 'https://maps.google.com/maps?q=' . $location_query . '&output=embed';
-$map_link_url     = 'https://www.google.com/maps/search/?api=1&query=' . $location_query;
+$map_link_url     = 'https://www.google.com/maps/place/Iglesia+Adventista+Centro+de+Estudio/@14.5948618,-90.515335,484m/data=!3m1!1e3!4m15!1m8!3m7!1s0x8589a21a720c2ffb:0xc874cabdb47d6e2a!2s3A+Av,+Cdad.+de+Guatemala,+Guatemala!3b1!8m2!3d14.6423941!4d-90.5169375!16s%2Fg%2F1vd3w3jq!3m5!1s0x8589a30046d59307:0x54548a7be7873091!8m2!3d14.5945581!4d-90.5144678!16s%2Fg%2F11zbnpn319?hl=es-US&entry=ttu&g_ep=EgoyMDI2MTEwOC4wIKXMDSoASAFQAw%3D%3D';
 ?>
 <section class="location-section" id="ubicacion" aria-labelledby="location-title">
 	<div class="location-section__inner">
