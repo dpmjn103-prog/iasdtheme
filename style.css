@@ -65,6 +65,38 @@ select {
 	font: inherit;
 }
 
+.back-to-top {
+	position: fixed;
+	z-index: 100;
+	right: max(1.25rem, env(safe-area-inset-right));
+	bottom: max(1.25rem, env(safe-area-inset-bottom));
+	display: grid;
+	width: 3.25rem;
+	height: 3.25rem;
+	place-items: center;
+	border: 0;
+	border-radius: 50%;
+	background: var(--color-blue-dark);
+	box-shadow: 0 4px 16px rgba(0, 30, 55, 0.25);
+	color: var(--color-white);
+	font-size: 1.7rem;
+	line-height: 1;
+	transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.back-to-top:hover {
+	transform: translateY(-3px);
+	background: var(--color-blue);
+}
+
+.back-to-top:focus-visible {
+	outline-offset: 4px;
+}
+
+.back-to-top[hidden] {
+	display: none;
+}
+
 button,
 .button {
 	cursor: pointer;

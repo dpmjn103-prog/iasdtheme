@@ -32,6 +32,25 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 
+	const backToTop = document.querySelector(".back-to-top");
+
+	if (backToTop) {
+		function updateBackToTopVisibility() {
+			backToTop.hidden = window.scrollY < 400;
+		}
+
+		updateBackToTopVisibility();
+		window.addEventListener("scroll", updateBackToTopVisibility, { passive: true });
+		backToTop.addEventListener("click", function () {
+			window.scrollTo({
+				top: 0,
+				behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+					? "auto"
+					: "smooth"
+			});
+		});
+	}
+
 	const toggle = document.querySelector(".menu-toggle");
 	const navigation = document.querySelector(".primary-navigation");
 

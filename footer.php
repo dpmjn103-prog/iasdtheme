@@ -62,6 +62,9 @@
 			</div>
 		</div>
 	</footer>
+	<button class="back-to-top" type="button" aria-label="<?php esc_attr_e( 'Volver al principio de la página', 'centro-estudios-iasd' ); ?>" hidden>
+		<span aria-hidden="true">↑</span>
+	</button>
 </div>
 <?php wp_footer(); ?>
 </body>
