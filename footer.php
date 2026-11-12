@@ -50,16 +50,12 @@
 			<section class="footer-column" aria-labelledby="footer-explore-title">
 				<h2 id="footer-explore-title"><?php esc_html_e( 'Explorar', 'centro-estudios-iasd' ); ?></h2>
 				<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Explorar', 'centro-estudios-iasd' ); ?>">
-					<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'footer',
-							'container'      => false,
-							'menu_id'        => 'footer-menu',
-							'fallback_cb'    => false,
-						)
-					);
-					?>
+					<ul>
+						<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php esc_html_e( 'Inicio', 'centro-estudios-iasd' ); ?></a></li>
+						<li><a href="<?php echo esc_url( home_url( '/#preguntas-frecuentes' ) ); ?>"><?php esc_html_e( 'Preguntas frecuentes', 'centro-estudios-iasd' ); ?></a></li>
+						<li><a href="<?php echo esc_url( home_url( '/#peticion-oracion' ) ); ?>"><?php esc_html_e( 'Oración', 'centro-estudios-iasd' ); ?></a></li>
+						<li><a href="<?php echo esc_url( home_url( '/#ubicacion' ) ); ?>"><?php esc_html_e( 'Contacto', 'centro-estudios-iasd' ); ?></a></li>
+					</ul>
 				</nav>
 			</section>
 

@@ -53,7 +53,7 @@
 			<summary><?php esc_html_e( 'Citas bíblicas', 'centro-estudios-iasd' ); ?></summary>
 			<div class="sanctuary-scriptures__content">
 				<blockquote>
-					<cite><?php esc_html_e( 'Daniel 8:14', 'centro-estudios-iasd' ); ?></cite>
+					<cite><?php esc_html_e( 'Daniel 8:14. Test1', 'centro-estudios-iasd' ); ?></cite>
 				</blockquote>
 				<blockquote>
 					<cite><?php esc_html_e( 'Hebreos 4:14–16', 'centro-estudios-iasd' ); ?></cite>
