@@ -101,14 +101,14 @@ function centro_estudios_iasd_primary_menu_fallback() {
 				<li><a href="<?php echo esc_url( home_url( '/#lo-nuevo' ) ); ?>"><?php esc_html_e( 'Lo nuevo', 'centro-estudios-iasd' ); ?></a></li>
 			</ul>
 		</li>
-		<li><a href="<?php echo esc_url( 'mailto:centrodestudioiasd@gmail.com?subject=Informaci%C3%B3n%20sobre%20donaciones' ); ?>"><?php esc_html_e( 'Donaciones', 'centro-estudios-iasd' ); ?></a></li>
+		<li><a href="<?php echo esc_url( 'mailto:iasdcentrodeestudio@gmail.com?subject=Informaci%C3%B3n%20sobre%20donaciones' ); ?>"><?php esc_html_e( 'Donaciones', 'centro-estudios-iasd' ); ?></a></li>
 		<li class="menu-item-has-children">
 			<a href="<?php echo esc_url( home_url( '/#ubicacion' ) ); ?>"><?php esc_html_e( 'Contacto', 'centro-estudios-iasd' ); ?></a>
 			<button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="submenu-contacto"><span class="screen-reader-text"><?php esc_html_e( 'Mostrar opciones de Contacto', 'centro-estudios-iasd' ); ?></span></button>
 			<ul class="sub-menu" id="submenu-contacto">
 				<li><a href="<?php echo esc_url( home_url( '/#ubicacion' ) ); ?>"><?php esc_html_e( 'Visítanos', 'centro-estudios-iasd' ); ?></a></li>
 				<li><a href="<?php echo esc_url( home_url( '/#peticion-oracion' ) ); ?>"><?php esc_html_e( 'Petición de Oración', 'centro-estudios-iasd' ); ?></a></li>
-				<li><a href="<?php echo esc_url( 'mailto:centrodestudioiasd@gmail.com?subject=Contacto%20-%20IASD%20Centro%20de%20Estudio' ); ?>"><?php esc_html_e( 'Escríbenos', 'centro-estudios-iasd' ); ?></a></li>
+				<li><a href="<?php echo esc_url( 'mailto:iasdcentrodeestudio@gmail.com?subject=Contacto%20-%20IASD%20Centro%20de%20Estudio' ); ?>"><?php esc_html_e( 'Escríbenos', 'centro-estudios-iasd' ); ?></a></li>
 			</ul>
 		</li>
 	</ul>

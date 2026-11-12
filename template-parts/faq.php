@@ -24,7 +24,7 @@
 			<details class="faq-item">
 				<summary><?php esc_html_e( '¿Puedo enviar una petición de oración?', 'centro-estudios-iasd' ); ?></summary>
 				<p><?php esc_html_e( 'Sí. Comparte tu petición por correo y nuestra comunidad orará por ti.', 'centro-estudios-iasd' ); ?>
-					<a href="mailto:centrodestudioiasd@gmail.com?subject=Quiero%20que%20oren%20por%20mi"><?php esc_html_e( 'Enviar petición de oración', 'centro-estudios-iasd' ); ?></a>
+					<a href="mailto:iasdcentrodeestudio@gmail.com?subject=Quiero%20que%20oren%20por%20mi"><?php esc_html_e( 'Enviar petición de oración', 'centro-estudios-iasd' ); ?></a>
 				</p>
 			</details>
 			<details class="faq-item">

@@ -40,7 +40,7 @@
 				<p><?php esc_html_e( 'Series especiales de estudio abiertas al público, con temas centrales de la Biblia. Fechas y detalles se anuncian por nuestras redes.', 'centro-estudios-iasd' ); ?></p>
 			</article>
 
-			<a class="community-card community-card--prayer" id="peticion-oracion" href="mailto:centrodestudioiasd@gmail.com?subject=Quiero%20que%20oren%20por%20mi">
+			<a class="community-card community-card--prayer" id="peticion-oracion" href="mailto:iasdcentrodeestudio@gmail.com?subject=Quiero%20que%20oren%20por%20mi">
 				<div class="community-card__top">
 					<span class="community-card__icon" aria-hidden="true">
 						<svg viewBox="0 0 24 24" focusable="false"><path d="M12 21s-8-4.4-8-11a4.5 4.5 0 0 1 8-2.9A4.5 4.5 0 0 1 20 10c0 6.6-8 11-8 11Z" /><path d="M12 8v6M9 11h6" /></svg>
@@ -50,12 +50,12 @@
 				<h3><?php esc_html_e( 'Queremos orar por ti', 'centro-estudios-iasd' ); ?></h3>
 				<p><?php esc_html_e( 'Envíanos tu petición al correo de la iglesia. Oramos como comunidad.', 'centro-estudios-iasd' ); ?></p>
 				<span class="community-card__link">
-					<?php esc_html_e( 'Centrodestudioiasd@gmail.com', 'centro-estudios-iasd' ); ?>
+					<?php esc_html_e( 'iasdcentrodeestudio@gmail.com', 'centro-estudios-iasd' ); ?>
 					<span aria-hidden="true">→</span>
 				</span>
 			</a>
 
-			<a class="community-card community-card--contact" href="mailto:centrodestudioiasd@gmail.com?subject=Contacto%20-%20IASD%20Centro%20de%20Estudio">
+			<a class="community-card community-card--contact" href="mailto:iasdcentrodeestudio@gmail.com?subject=Contacto%20-%20IASD%20Centro%20de%20Estudio">
 				<div class="community-card__top">
 					<span class="community-card__icon" aria-hidden="true">
 						<svg viewBox="0 0 24 24" focusable="false"><path d="M4 5h16v14H4z" /><path d="m4 7 8 6 8-6" /></svg>
@@ -65,7 +65,7 @@
 				<h3><?php esc_html_e( 'Contáctanos', 'centro-estudios-iasd' ); ?></h3>
 				<p><?php esc_html_e( 'Escríbenos con cualquier pregunta o duda. Respondemos con gusto.', 'centro-estudios-iasd' ); ?></p>
 				<span class="community-card__link">
-					<?php esc_html_e( 'Centrodestudioiasd@gmail.com', 'centro-estudios-iasd' ); ?>
+					<?php esc_html_e( 'iasdcentrodeestudio@gmail.com', 'centro-estudios-iasd' ); ?>
 					<span aria-hidden="true">→</span>
 				</span>
 			</a>

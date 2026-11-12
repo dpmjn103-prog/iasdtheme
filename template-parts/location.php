@@ -43,7 +43,7 @@ $map_link_url     = 'https://www.google.com/maps/place/Iglesia+Adventista+Centro
 					</span>
 					<div>
 						<h3><?php esc_html_e( 'Correo electrónico', 'centro-estudios-iasd' ); ?></h3>
-						<a href="mailto:centrodestudioiasd@gmail.com">centrodestudioiasd@gmail.com</a>
+						<a href="mailto:iasdcentrodeestudio@gmail.com">iasdcentrodeestudio@gmail.com</a>
 					</div>
 				</article>
 				<article class="location-card">
