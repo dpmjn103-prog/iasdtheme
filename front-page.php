@@ -36,7 +36,6 @@ get_header();
 	<?php get_template_part( 'template-parts/study-method' ); ?>
 	<?php get_template_part( 'template-parts/sanctuary' ); ?>
 	<?php get_template_part( 'template-parts/testimonials' ); ?>
-	<?php get_template_part( 'template-parts/faq' ); ?>
 	<?php get_template_part( 'template-parts/saturday-program' ); ?>
 	<?php get_template_part( 'template-parts/community-updates' ); ?>
 	<?php get_template_part( 'template-parts/gallery' ); ?>
@@ -55,6 +54,7 @@ get_header();
 		<?php endwhile; ?>
 	<?php endif; ?>
 	<?php get_template_part( 'template-parts/location' ); ?>
+	<?php get_template_part( 'template-parts/faq' ); ?>
 </main>
 <?php
 get_footer();

@@ -10,8 +10,8 @@
 		<div class="orion-feature__logo-frame">
 			<img
 				class="orion-feature__logo"
-				src="<?php echo esc_url( get_theme_file_uri( '/assets/images/iasd-logo.jpeg' ) ); ?>"
-				alt="<?php esc_attr_e( 'Logotipo del Centro de Estudio IASD', 'centro-estudios-iasd' ); ?>"
+				src="<?php echo esc_url( 'https://lavozdelremanente.org/wp-content/uploads/2026/11/XtmhqwyTQ2WbPykyZpHz_Rf3654MF4NPTikiv.avif' ); ?>"
+				alt="<?php esc_attr_e( 'Logotipo de Open Minds', 'centro-estudios-iasd' ); ?>"
 				loading="lazy"
 				decoding="async"
 			>

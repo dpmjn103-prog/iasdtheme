@@ -444,12 +444,26 @@ body.site-intro-active {
 	align-items: center;
 	overflow: hidden;
 	background-color: #005582;
-	background-image:
-		linear-gradient(90deg, rgba(0, 30, 55, 0.86) 0%, rgba(0, 30, 55, 0.57) 48%, rgba(0, 30, 55, 0.12) 100%),
-		var(--hero-image, linear-gradient(135deg, #07517a, #4d86a5));
+	color: var(--color-white);
+}
+
+.hero::before {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	background-image: var(--hero-image, linear-gradient(135deg, #07517a, #4d86a5));
 	background-position: center;
 	background-size: cover;
-	color: var(--color-white);
+	content: "";
+}
+
+.hero::after {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	background: linear-gradient(90deg, rgba(0, 30, 55, 0.55) 0%, rgba(0, 30, 55, 0.3) 48%, rgba(0, 30, 55, 0.06) 100%);
+	content: "";
+	pointer-events: none;
 }
 
 .hero__content {
@@ -2710,6 +2724,9 @@ body.site-intro-active {
 
 	.hero {
 		min-height: 36rem;
+	}
+
+	.hero::before {
 		background-position: 58% center;
 	}
 
