@@ -8,7 +8,10 @@
 	<footer class="site-footer">
 		<div class="container footer-main">
 			<section class="footer-column" aria-labelledby="footer-about-title">
-				<h2 class="footer-brand" id="footer-about-title"><?php esc_html_e( 'Centro de Estudio IASD', 'centro-estudios-iasd' ); ?></h2>
+				<div class="footer-brand-lockup">
+					<img class="footer-brand__logo" src="<?php echo esc_url( 'https://lavozdelremanente.org/wp-content/uploads/2026/11/logo.jpeg' ); ?>" alt="<?php esc_attr_e( 'Logotipo del Centro de Estudio IASD', 'centro-estudios-iasd' ); ?>" width="68" height="68" loading="lazy" decoding="async">
+					<h2 class="footer-brand" id="footer-about-title"><?php esc_html_e( 'Centro de Estudio IASD', 'centro-estudios-iasd' ); ?></h2>
+				</div>
 				<p><?php echo esc_html( get_theme_mod( 'footer_about', centro_estudios_iasd_default( 'footer_about' ) ) ); ?></p>
 				<div class="footer-contact">
 					<?php $email = sanitize_email( get_theme_mod( 'footer_email', centro_estudios_iasd_default( 'footer_email' ) ) ); ?>
@@ -60,7 +63,7 @@
 			</section>
 
 			<section class="footer-column" aria-labelledby="footer-verse-title">
-				<h2 id="footer-verse-title"><?php esc_html_e( 'Una palabra para el SÁBADO', 'centro-estudios-iasd' ); ?></h2>
+				<h2 id="footer-verse-title"><?php esc_html_e( 'Una palabra puntual:', 'centro-estudios-iasd' ); ?></h2>
 				<blockquote class="footer-verse">
 					<p><?php echo esc_html( get_theme_mod( 'footer_verse', centro_estudios_iasd_default( 'footer_verse' ) ) ); ?></p>
 					<cite><?php echo esc_html( get_theme_mod( 'footer_verse_reference', centro_estudios_iasd_default( 'footer_verse_reference' ) ) ); ?></cite>
