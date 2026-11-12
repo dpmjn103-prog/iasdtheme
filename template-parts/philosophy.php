@@ -8,9 +8,9 @@
 <section class="philosophy-section" id="nosotros" aria-labelledby="philosophy-title">
 	<div class="philosophy-section__inner">
 		<header class="philosophy-section__heading">
-			<p class="philosophy-section__eyebrow"><?php esc_html_e( 'Nuestra filosofía', 'centro-estudios-iasd' ); ?></p>
+			<p class="philosophy-section__eyebrow"><?php esc_html_e( 'Nuestra esencia', 'centro-estudios-iasd' ); ?></p>
 			<h2 id="philosophy-title"><?php esc_html_e( 'Aprendemos juntos,', 'centro-estudios-iasd' ); ?> <span><?php esc_html_e( 'crecemos en la fe', 'centro-estudios-iasd' ); ?></span></h2>
-			<p><?php esc_html_e( 'Nuestra filosofía se basa en el aprendizaje participativo. Valoramos las preguntas, el intercambio de ideas y el estudio profundo de la Palabra de Dios, convencidos de que el crecimiento espiritual se fortalece cuando aprendemos juntos.', 'centro-estudios-iasd' ); ?></p>
+			<p><?php esc_html_e( 'Nuestra esencia se basa en el aprendizaje participativo. Valoramos las preguntas, el intercambio de ideas y el estudio profundo de la Palabra de Dios, convencidos de que el crecimiento espiritual se fortalece cuando aprendemos juntos.', 'centro-estudios-iasd' ); ?></p>
 		</header>
 
 		<ul class="philosophy-grid">
@@ -22,7 +22,7 @@
 					</span>
 				</div>
 				<h3><?php esc_html_e( 'Pregunta Libre', 'centro-estudios-iasd' ); ?></h3>
-				<p><?php esc_html_e( 'Aquí puedes levantar la mano y hacer preguntas durante el estudio. Ninguna pregunta es pequeña.', 'centro-estudios-iasd' ); ?></p>
+				<p><?php esc_html_e( 'Aquí puedes levantar la mano y hacer preguntas durante el estudio. Ninguna pregunta es inválida.', 'centro-estudios-iasd' ); ?></p>
 				<span class="philosophy-card__accent" aria-hidden="true"></span>
 			</li>
 

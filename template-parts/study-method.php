@@ -65,7 +65,7 @@
 					<span class="study-step__number" aria-hidden="true">01</span>
 					<div>
 						<h4><?php esc_html_e( 'Llegamos sin prisa', 'centro-estudios-iasd' ); ?></h4>
-						<p><?php esc_html_e( 'Té, saludo, y un breve momento para conocernos. No hay “visitantes”, solo personas.', 'centro-estudios-iasd' ); ?></p>
+						<p><?php esc_html_e( 'Té, saludo, y un momento para conocernos y saludarnos.', 'centro-estudios-iasd' ); ?></p>
 					</div>
 				</li>
 				<li class="study-step">
