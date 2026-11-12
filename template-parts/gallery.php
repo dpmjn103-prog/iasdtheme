@@ -45,22 +45,28 @@
 				<figcaption><?php esc_html_e( 'Almuerzo en comunidad', 'centro-estudios-iasd' ); ?></figcaption>
 			</figure>
 			<figure class="community-gallery__item">
-				<a class="community-gallery__link" href="https://lavozdelremanente.org/wp-content/uploads/2026/11/final-call-300x206.jpg" target="_blank" rel="noopener noreferrer" aria-label="<?php esc_attr_e( 'Ampliar foto de la comunidad', 'centro-estudios-iasd' ); ?>">
-					<img src="https://lavozdelremanente.org/wp-content/uploads/2026/11/final-call-300x206.jpg" alt="<?php esc_attr_e( 'Fotografía de la comunidad', 'centro-estudios-iasd' ); ?>" loading="lazy" decoding="async">
+				<a class="community-gallery__link" href="https://lavozdelremanente.org/wp-content/uploads/2026/11/final-call.jpg" target="_blank" rel="noopener noreferrer" aria-label="<?php esc_attr_e( 'Ampliar foto: Encuentro en comunidad', 'centro-estudios-iasd' ); ?>">
+					<img src="https://lavozdelremanente.org/wp-content/uploads/2026/11/final-call.jpg" alt="<?php esc_attr_e( 'Fotografía de un encuentro en comunidad', 'centro-estudios-iasd' ); ?>" loading="lazy" decoding="async">
 				</a>
 				<figcaption><?php esc_html_e( 'Encuentro en comunidad', 'centro-estudios-iasd' ); ?></figcaption>
 			</figure>
 			<figure class="community-gallery__item">
-				<a class="community-gallery__link" href="https://lavozdelremanente.org/wp-content/uploads/2026/11/gallery-6-300x200.jpg" target="_blank" rel="noopener noreferrer" aria-label="<?php esc_attr_e( 'Ampliar foto de la comunidad', 'centro-estudios-iasd' ); ?>">
-					<img src="https://lavozdelremanente.org/wp-content/uploads/2026/11/gallery-6-300x200.jpg" alt="<?php esc_attr_e( 'Fotografía de la comunidad', 'centro-estudios-iasd' ); ?>" loading="lazy" decoding="async">
+				<a class="community-gallery__link" href="https://lavozdelremanente.org/wp-content/uploads/2026/11/gallery-6.jpg" target="_blank" rel="noopener noreferrer" aria-label="<?php esc_attr_e( 'Ampliar foto: Momentos compartidos', 'centro-estudios-iasd' ); ?>">
+					<img src="https://lavozdelremanente.org/wp-content/uploads/2026/11/gallery-6.jpg" alt="<?php esc_attr_e( 'Fotografía de momentos compartidos en comunidad', 'centro-estudios-iasd' ); ?>" loading="lazy" decoding="async">
 				</a>
 				<figcaption><?php esc_html_e( 'Momentos compartidos', 'centro-estudios-iasd' ); ?></figcaption>
 			</figure>
 			<figure class="community-gallery__item">
-				<a class="community-gallery__link" href="https://lavozdelremanente.org/wp-content/uploads/2026/11/gallery-4-300x200.jpg" target="_blank" rel="noopener noreferrer" aria-label="<?php esc_attr_e( 'Ampliar foto de la comunidad', 'centro-estudios-iasd' ); ?>">
-					<img src="https://lavozdelremanente.org/wp-content/uploads/2026/11/gallery-4-300x200.jpg" alt="<?php esc_attr_e( 'Fotografía de la comunidad', 'centro-estudios-iasd' ); ?>" loading="lazy" decoding="async">
+				<a class="community-gallery__link" href="https://lavozdelremanente.org/wp-content/uploads/2026/11/gallery-4.jpg" target="_blank" rel="noopener noreferrer" aria-label="<?php esc_attr_e( 'Ampliar foto: Un momento especial', 'centro-estudios-iasd' ); ?>">
+					<img src="https://lavozdelremanente.org/wp-content/uploads/2026/11/gallery-4.jpg" alt="<?php esc_attr_e( 'Fotografía de un momento especial en comunidad', 'centro-estudios-iasd' ); ?>" loading="lazy" decoding="async">
 				</a>
 				<figcaption><?php esc_html_e( 'Un momento especial', 'centro-estudios-iasd' ); ?></figcaption>
+			</figure>
+			<figure class="community-gallery__item">
+				<a class="community-gallery__link" href="https://lavozdelremanente.org/wp-content/uploads/2026/11/gallery-3.jpg" target="_blank" rel="noopener noreferrer" aria-label="<?php esc_attr_e( 'Ampliar foto: La comunidad reunida', 'centro-estudios-iasd' ); ?>">
+					<img src="https://lavozdelremanente.org/wp-content/uploads/2026/11/gallery-3.jpg" alt="<?php esc_attr_e( 'Fotografía de la comunidad reunida', 'centro-estudios-iasd' ); ?>" loading="lazy" decoding="async">
+				</a>
+				<figcaption><?php esc_html_e( 'La comunidad reunida', 'centro-estudios-iasd' ); ?></figcaption>
 			</figure>
 		</div>
 	</div>
