@@ -101,7 +101,7 @@ function centro_estudios_iasd_primary_menu_fallback() {
 				<li><a href="<?php echo esc_url( home_url( '/#lo-nuevo' ) ); ?>"><?php esc_html_e( 'Lo nuevo', 'centro-estudios-iasd' ); ?></a></li>
 			</ul>
 		</li>
-		<li><a href="<?php echo esc_url( 'mailto:iasdcentrodeestudio@gmail.com?subject=Informaci%C3%B3n%20sobre%20donaciones' ); ?>"><?php esc_html_e( 'Donaciones', 'centro-estudios-iasd' ); ?></a></li>
+		<li><a href="<?php echo esc_url( home_url( '/#donaciones' ) ); ?>"><?php esc_html_e( 'Donaciones', 'centro-estudios-iasd' ); ?></a></li>
 		<li class="menu-item-has-children">
 			<a href="<?php echo esc_url( home_url( '/#ubicacion' ) ); ?>"><?php esc_html_e( 'Contacto', 'centro-estudios-iasd' ); ?></a>
 			<button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="submenu-contacto"><span class="screen-reader-text"><?php esc_html_e( 'Mostrar opciones de Contacto', 'centro-estudios-iasd' ); ?></span></button>
@@ -114,6 +114,27 @@ function centro_estudios_iasd_primary_menu_fallback() {
 	</ul>
 	<?php
 }
+
+/**
+ * Point the primary navigation's custom donations item to the donations section.
+ *
+ * @param array    $atts HTML attributes applied to the menu link.
+ * @param WP_Post  $item The current menu item.
+ * @param stdClass $args An object of menu arguments.
+ * @return array
+ */
+function centro_estudios_iasd_primary_donations_link( $atts, $item, $args ) {
+	if (
+		isset( $args->theme_location, $item->title ) &&
+		'primary' === $args->theme_location &&
+		'Donaciones' === trim( wp_strip_all_tags( $item->title ) )
+	) {
+		$atts['href'] = home_url( '/#donaciones' );
+	}
+
+	return $atts;
+}
+add_filter( 'nav_menu_link_attributes', 'centro_estudios_iasd_primary_donations_link', 10, 3 );
 
 /**
  * Enqueue theme assets.

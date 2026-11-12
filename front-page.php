@@ -54,6 +54,7 @@ get_header();
 		<?php endwhile; ?>
 	<?php endif; ?>
 	<?php get_template_part( 'template-parts/location' ); ?>
+	<?php get_template_part( 'template-parts/donations' ); ?>
 	<?php get_template_part( 'template-parts/faq' ); ?>
 </main>
 <?php

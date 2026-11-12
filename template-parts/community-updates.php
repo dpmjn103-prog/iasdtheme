@@ -21,9 +21,35 @@
 					</span>
 					<span class="community-card__label"><?php esc_html_e( 'A quién apoyamos', 'centro-estudios-iasd' ); ?></span>
 				</div>
-				<h3><?php esc_html_e( 'OpenMindsGT', 'centro-estudios-iasd' ); ?></h3>
+				<div class="community-card__brand">
+					<img
+						class="community-card__logo"
+						src="<?php echo esc_url( 'https://lavozdelremanente.org/wp-content/uploads/2026/11/XtmhqwyTQ2WbPykyZpHz_Rf3654MF4NPTikiv.avif' ); ?>"
+						alt="<?php esc_attr_e( 'Logotipo de Open Minds GT', 'centro-estudios-iasd' ); ?>"
+						width="80"
+						height="80"
+						loading="lazy"
+						decoding="async"
+					>
+					<h3><?php esc_html_e( 'OpenMindsGT', 'centro-estudios-iasd' ); ?></h3>
+				</div>
+				<div class="community-card__photos">
+					<img
+						src="<?php echo esc_url( 'https://lavozdelremanente.org/wp-content/uploads/2026/11/Gracias-a-los-que-llegaron-Los-esperamos-para-el-proximo-Open-Minds-%F0%9F%99%8C%F0%9F%8F%BB.jpg' ); ?>"
+						alt="<?php esc_attr_e( 'Conversatorio de Open Minds GT con un expositor y público', 'centro-estudios-iasd' ); ?>"
+						loading="lazy"
+						decoding="async"
+					>
+					<img
+						src="<?php echo esc_url( 'https://lavozdelremanente.org/wp-content/uploads/2026/11/836277595_18022855586939939_905877585876962257_n.jpg' ); ?>"
+						alt="<?php esc_attr_e( 'Público reunido durante un evento de Open Minds GT', 'centro-estudios-iasd' ); ?>"
+						loading="lazy"
+						decoding="async"
+					>
+				</div>
 				<p><?php esc_html_e( 'Apoyamos este canal que busca transmitir a los espectadores el mayor entendimiento sobre el mundo que nos rodea desde una perspectiva espiritual respecto a la economía, política, ciencia y religión, basados en argumentos y fundamentos históricos.', 'centro-estudios-iasd' ); ?></p>
 				<a class="community-card__link" href="https://www.youtube.com/@OpenMindsGT" target="_blank" rel="noopener noreferrer">
+					<svg class="community-card__youtube-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="5" width="19" height="14" rx="4" /><path d="m10 9 5 3-5 3z" /></svg>
 					<?php esc_html_e( 'Visitar el canal de YouTube', 'centro-estudios-iasd' ); ?>
 					<span aria-hidden="true">↗</span>
 				</a>

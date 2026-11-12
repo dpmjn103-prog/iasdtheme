@@ -9,8 +9,8 @@
 		<div class="container footer-main">
 			<section class="footer-column" aria-labelledby="footer-about-title">
 				<div class="footer-brand-lockup">
-					<img class="footer-brand__logo" src="<?php echo esc_url( 'https://lavozdelremanente.org/wp-content/uploads/2026/11/logo.jpeg' ); ?>" alt="<?php esc_attr_e( 'Logotipo del Centro de Estudio IASD', 'centro-estudios-iasd' ); ?>" width="68" height="68" loading="lazy" decoding="async">
-					<h2 class="footer-brand" id="footer-about-title"><?php esc_html_e( 'Centro de Estudio IASD', 'centro-estudios-iasd' ); ?></h2>
+					<img class="footer-brand__logo" src="<?php echo esc_url( 'https://lavozdelremanente.org/wp-content/uploads/2026/11/logo.jpeg' ); ?>" alt="<?php esc_attr_e( 'Logotipo del Centro de Estudio · Zona 10, Próceres', 'centro-estudios-iasd' ); ?>" width="68" height="68" loading="lazy" decoding="async">
+					<h2 class="footer-brand" id="footer-about-title"><?php esc_html_e( 'Centro de Estudio · Zona 10, Próceres', 'centro-estudios-iasd' ); ?></h2>
 				</div>
 				<p><?php echo esc_html( get_theme_mod( 'footer_about', centro_estudios_iasd_default( 'footer_about' ) ) ); ?></p>
 				<div class="footer-contact">
@@ -58,6 +58,7 @@
 						<li><a href="<?php echo esc_url( home_url( '/#preguntas-frecuentes' ) ); ?>"><?php esc_html_e( 'Preguntas frecuentes', 'centro-estudios-iasd' ); ?></a></li>
 						<li><a href="<?php echo esc_url( home_url( '/#peticion-oracion' ) ); ?>"><?php esc_html_e( 'Oración', 'centro-estudios-iasd' ); ?></a></li>
 						<li><a href="<?php echo esc_url( home_url( '/#ubicacion' ) ); ?>"><?php esc_html_e( 'Contacto', 'centro-estudios-iasd' ); ?></a></li>
+						<li><a href="<?php echo esc_url( home_url( '/#donaciones' ) ); ?>"><?php esc_html_e( 'Donaciones', 'centro-estudios-iasd' ); ?></a></li>
 					</ul>
 				</nav>
 			</section>

@@ -43,7 +43,7 @@ get_header();
 
 	<section class="page-content page-content--wide" aria-labelledby="index-title">
 		<header class="content-intro">
-			<p class="eyebrow"><?php esc_html_e( 'Centro de Estudios IASD', 'centro-estudios-iasd' ); ?></p>
+			<p class="eyebrow"><?php esc_html_e( 'Centro de Estudio · Zona 10, Próceres', 'centro-estudios-iasd' ); ?></p>
 			<h2 class="archive-title" id="index-title"><?php esc_html_e( 'Reflexiones y recursos', 'centro-estudios-iasd' ); ?></h2>
 		</header>
 		<?php if ( have_posts() ) : ?>
@@ -74,6 +74,7 @@ get_header();
 		<?php endif; ?>
 	</section>
 	<?php get_template_part( 'template-parts/location' ); ?>
+	<?php get_template_part( 'template-parts/donations' ); ?>
 	<?php get_template_part( 'template-parts/faq' ); ?>
 </main>
 <?php

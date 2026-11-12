@@ -11,7 +11,7 @@
 			<img
 				class="orion-feature__logo"
 				src="<?php echo esc_url( get_theme_file_uri( '/assets/images/iasd-logo.jpeg' ) ); ?>"
-				alt="<?php esc_attr_e( 'Logotipo del Centro de Estudio IASD', 'centro-estudios-iasd' ); ?>"
+				alt="<?php esc_attr_e( 'Logotipo del Centro de Estudio · Zona 10, Próceres', 'centro-estudios-iasd' ); ?>"
 				loading="lazy"
 				decoding="async"
 			>

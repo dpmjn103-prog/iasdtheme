@@ -53,13 +53,13 @@
 			<summary><?php esc_html_e( 'Citas bíblicas', 'centro-estudios-iasd' ); ?></summary>
 			<div class="sanctuary-scriptures__content">
 				<blockquote>
-					<cite><?php esc_html_e( 'Daniel 8:14. Test1', 'centro-estudios-iasd' ); ?></cite>
+					<cite><?php esc_html_e( 'Y él dijo: Hasta dos mil trescientas tardes y mañanas; luego el santuario será purificado. Daniel 8:14 (RVR1960). ', 'centro-estudios-iasd' ); ?></cite>
 				</blockquote>
 				<blockquote>
-					<cite><?php esc_html_e( 'Hebreos 4:14–16', 'centro-estudios-iasd' ); ?></cite>
+					<cite><?php esc_html_e( 'Por tanto, teniendo un gran sumo sacerdote que traspasó los cielos, Jesús el Hijo de Dios, retengamos nuestra profesión. Porque no tenemos un sumo sacerdote que no pueda compadecerse de nuestras debilidades, sino uno que fue tentado en todo según nuestra semejanza, pero sin pecado. Acerquémonos, pues, confiadamente al trono de la gracia, para alcanzar misericordia y hallar gracia para el oportuno socorro. Hebreos 4:14–16 (RVR1960).', 'centro-estudios-iasd' ); ?></cite>
 				</blockquote>
 				<blockquote>
-					<cite><?php esc_html_e( 'Hebreos 8:1–2', 'centro-estudios-iasd' ); ?></cite>
+					<cite><?php esc_html_e( 'Ahora bien, el punto principal de lo que venimos diciendo es que tenemos tal sumo sacerdote, el cual se sentó a la diestra del trono de la Majestad en los cielos, ministro del santuario, y de aquel verdadero tabernáculo que levantó el Señor, y no el hombre. Hebreos 8:1–2 (RVR1960).', 'centro-estudios-iasd' ); ?></cite>
 				</blockquote>
 			</div>
 		</details>

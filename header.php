@@ -46,7 +46,14 @@
 						>
 					</span>
 					<span class="site-branding__text">
-						<span class="site-title"><?php esc_html_e( 'Centro de Estudio IASD', 'centro-estudios-iasd' ); ?></span>
+						<span class="site-title">
+							<span class="site-title__name"><?php esc_html_e( 'Centro de Estudio', 'centro-estudios-iasd' ); ?></span>
+							<span class="site-title__location">
+								<?php esc_html_e( 'Zona 10', 'centro-estudios-iasd' ); ?>
+								<span class="site-title__separator" aria-hidden="true">·</span>
+								<?php esc_html_e( 'Próceres', 'centro-estudios-iasd' ); ?>
+							</span>
+						</span>
 					</span>
 				</a>
 			</div>

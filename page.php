@@ -12,7 +12,7 @@ get_header();
 		<?php the_post(); ?>
 		<article <?php post_class(); ?>>
 			<header class="entry-header">
-				<p class="eyebrow"><?php esc_html_e( 'Centro de Estudios IASD', 'centro-estudios-iasd' ); ?></p>
+				<p class="eyebrow"><?php esc_html_e( 'Centro de Estudio · Zona 10, Próceres', 'centro-estudios-iasd' ); ?></p>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
 			</header>
 			<div class="entry-content">
