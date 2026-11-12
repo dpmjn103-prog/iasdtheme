@@ -44,6 +44,24 @@
 				</a>
 				<figcaption><?php esc_html_e( 'Almuerzo en comunidad', 'centro-estudios-iasd' ); ?></figcaption>
 			</figure>
+			<figure class="community-gallery__item">
+				<a class="community-gallery__link" href="https://lavozdelremanente.org/wp-content/uploads/2026/11/final-call-300x206.jpg" target="_blank" rel="noopener noreferrer" aria-label="<?php esc_attr_e( 'Ampliar foto de la comunidad', 'centro-estudios-iasd' ); ?>">
+					<img src="https://lavozdelremanente.org/wp-content/uploads/2026/11/final-call-300x206.jpg" alt="<?php esc_attr_e( 'Fotografía de la comunidad', 'centro-estudios-iasd' ); ?>" loading="lazy" decoding="async">
+				</a>
+				<figcaption><?php esc_html_e( 'Encuentro en comunidad', 'centro-estudios-iasd' ); ?></figcaption>
+			</figure>
+			<figure class="community-gallery__item">
+				<a class="community-gallery__link" href="https://lavozdelremanente.org/wp-content/uploads/2026/11/gallery-6-300x200.jpg" target="_blank" rel="noopener noreferrer" aria-label="<?php esc_attr_e( 'Ampliar foto de la comunidad', 'centro-estudios-iasd' ); ?>">
+					<img src="https://lavozdelremanente.org/wp-content/uploads/2026/11/gallery-6-300x200.jpg" alt="<?php esc_attr_e( 'Fotografía de la comunidad', 'centro-estudios-iasd' ); ?>" loading="lazy" decoding="async">
+				</a>
+				<figcaption><?php esc_html_e( 'Momentos compartidos', 'centro-estudios-iasd' ); ?></figcaption>
+			</figure>
+			<figure class="community-gallery__item">
+				<a class="community-gallery__link" href="https://lavozdelremanente.org/wp-content/uploads/2026/11/gallery-4-300x200.jpg" target="_blank" rel="noopener noreferrer" aria-label="<?php esc_attr_e( 'Ampliar foto de la comunidad', 'centro-estudios-iasd' ); ?>">
+					<img src="https://lavozdelremanente.org/wp-content/uploads/2026/11/gallery-4-300x200.jpg" alt="<?php esc_attr_e( 'Fotografía de la comunidad', 'centro-estudios-iasd' ); ?>" loading="lazy" decoding="async">
+				</a>
+				<figcaption><?php esc_html_e( 'Un momento especial', 'centro-estudios-iasd' ); ?></figcaption>
+			</figure>
 		</div>
 	</div>
 </section>
