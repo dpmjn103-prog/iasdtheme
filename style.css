@@ -539,30 +539,44 @@ button,
 	color: var(--color-ink);
 }
 
-.hero__button--visit.button--outline {
+.button--study {
 	background: var(--color-gold);
 	border-color: var(--color-gold);
 	color: #20313d;
 }
 
-.hero__button--visit.button--outline:hover {
+.button--study:hover {
 	background: #f0c979;
 	border-color: #f0c979;
 	color: #20313d;
 }
 
-.hero__button--study.button--solid,
-.hero__button--study.button--outline {
-	background: rgba(255, 255, 255, 0.06);
-	border-color: rgba(255, 255, 255, 0.75);
-	color: var(--color-white);
+.hero .hero__button--visit.button--solid,
+.hero .hero__button--visit.button--outline {
+	background: var(--color-gold);
+	border-color: var(--color-gold);
+	color: #20313d;
 }
 
-.hero__button--study.button--solid:hover,
-.hero__button--study.button--outline:hover {
+.hero .hero__button--visit.button--solid:hover,
+.hero .hero__button--visit.button--outline:hover {
+	background: #f0c979;
+	border-color: #f0c979;
+	color: #20313d;
+}
+
+.hero .hero__button--study.button--solid,
+.hero .hero__button--study.button--outline {
 	background: var(--color-white);
 	border-color: var(--color-white);
-	color: var(--color-ink);
+	color: var(--color-blue-dark);
+}
+
+.hero .hero__button--study.button--solid:hover,
+.hero .hero__button--study.button--outline:hover {
+	background: #f0f3f5;
+	border-color: #f0f3f5;
+	color: var(--color-blue-dark);
 }
 
 .page-content {
@@ -3077,7 +3091,7 @@ button,
 	}
 
 	.hero__actions {
-		align-items: center;
+		align-items: flex-start;
 		flex-direction: column;
 	}
 
