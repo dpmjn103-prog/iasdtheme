@@ -30,10 +30,13 @@ get_header();
 				<?php endif; ?>
 			</div>
 		</div>
+		
 	</section>
+	
+
 
 	<?php get_template_part( 'template-parts/philosophy' ); ?>
-	<?php get_template_part( 'template-parts/orion-nebula' ); ?>
+	
 	<?php get_template_part( 'template-parts/study-method' ); ?>
 	<?php get_template_part( 'template-parts/sanctuary' ); ?>
 	<?php get_template_part( 'template-parts/testimonials' ); ?>
