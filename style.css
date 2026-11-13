@@ -140,19 +140,18 @@ button,
 
 .announcement__track {
 	display: flex;
-	width: 100%;
-	height: 200%;
-	flex-direction: column;
+	width: max-content;
+	height: 100%;
 	animation: announcement-scroll var(--announcement-speed, 18s) linear infinite;
 }
 
 .announcement__line {
 	display: flex;
 	min-height: 2.75rem;
+	flex: 0 0 auto;
 	align-items: center;
-	justify-content: center;
-	padding: 0 1rem;
-	text-align: center;
+	padding-inline: 1.5rem;
+	white-space: nowrap;
 }
 
 .announcement:hover .announcement__track,
@@ -162,7 +161,7 @@ button,
 
 @keyframes announcement-scroll {
 	to {
-		transform: translateY(-50%);
+		transform: translateX(-50%);
 	}
 }
 
@@ -3012,7 +3011,12 @@ button,
 	}
 
 	.announcement__track {
-		height: 200%;
+		height: 100%;
+	}
+
+	.announcement,
+	.announcement__line {
+		font-size: min(var(--announcement-font-size, 0.875rem), 1rem);
 	}
 
 	.site-description {
@@ -3045,7 +3049,7 @@ button,
 	}
 
 	.hero::before {
-		background-position: 58% center;
+		background-position: 88% center;
 	}
 
 	.hero__content {
@@ -3053,12 +3057,15 @@ button,
 	}
 
 	.hero__actions {
-		align-items: stretch;
+		align-items: flex-start;
 		flex-direction: column;
 	}
 
 	.hero__actions .button {
-		width: 100%;
+		width: auto;
+		max-width: 100%;
+		min-height: 2.8rem;
+		padding: 0.6rem 1rem;
 	}
 
 	.page-content--reading,
@@ -3234,6 +3241,10 @@ button,
 
 	.announcement__track {
 		animation: none;
+	}
+
+	.announcement__line[aria-hidden="true"] {
+		display: none;
 	}
 
 	* {
