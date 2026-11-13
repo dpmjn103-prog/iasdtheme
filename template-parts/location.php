@@ -67,10 +67,12 @@ $waze_link_url    = 'https://waze.com/ul?ll=' . $location_query . '&navigate=yes
 				</article>
 				<div class="location-section__directions-actions">
 					<a class="button button--solid location-section__directions" href="<?php echo esc_url( $map_link_url ); ?>" target="_blank" rel="noopener noreferrer">
+						<svg class="location-section__directions-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#4285f4" d="M12 2a8 8 0 0 0-8 8c0 5.2 8 12 8 12s8-6.8 8-12a8 8 0 0 0-8-8Zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/><path fill="#34a853" d="M7.1 16.4c1.6 2 3.4 3.6 4.9 4.9 1.5-1.3 3.3-2.9 4.9-4.9H7.1Z"/></svg>
 						<?php esc_html_e( 'Cómo llegar con Google Maps', 'centro-estudios-iasd' ); ?>
 						<span aria-hidden="true">↗</span>
 					</a>
 					<a class="button button--solid location-section__directions" href="<?php echo esc_url( $waze_link_url ); ?>" target="_blank" rel="noopener noreferrer">
+						<svg class="location-section__directions-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#fff" d="M12 2a9 9 0 0 0-8.8 10.9L2 17l4.3-1.1A9 9 0 1 0 12 2Zm-3.5 8a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Zm7 0a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM7.9 15.1l1.2-.8a3.6 3.6 0 0 0 5.8 0l1.2.8a5.1 5.1 0 0 1-8.2 0Z"/><circle cx="7" cy="21" r="1.5" fill="#fff"/><circle cx="17" cy="21" r="1.5" fill="#fff"/></svg>
 						<?php esc_html_e( 'Cómo llegar con Waze', 'centro-estudios-iasd' ); ?>
 						<span aria-hidden="true">↗</span>
 					</a>

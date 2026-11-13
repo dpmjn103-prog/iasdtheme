@@ -2146,6 +2146,12 @@ button,
 	color: var(--color-white);
 }
 
+.location-section__directions-icon {
+	width: 1.25rem;
+	height: 1.25rem;
+	flex: 0 0 auto;
+}
+
 .location-section__directions:hover {
 	background: var(--color-blue-dark);
 	color: var(--color-white);
