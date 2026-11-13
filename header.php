@@ -14,11 +14,6 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div class="site-intro" aria-hidden="true">
-	<video class="site-intro__video" autoplay muted playsinline preload="auto">
-		<source src="https://lavozdelremanente.org/wp-content/uploads/2026/11/animacion1_inicio_v2.mp4" type="video/mp4">
-	</video>
-</div>
 <a class="skip-link" href="#site-content"><?php esc_html_e( 'Saltar al contenido', 'centro-estudios-iasd' ); ?></a>
 <div class="site-shell">
 	<?php if ( get_theme_mod( 'announcement_enabled', centro_estudios_iasd_default( 'announcement_enabled' ) ) ) : ?>

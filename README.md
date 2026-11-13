@@ -10,7 +10,7 @@ Tema de WordPress adaptable y accesible para presentar el Centro de Estudios IAS
 
 ## Personalización
 
-- **Identidad del sitio:** el encabezado muestra el logo IASD incluido en `assets/images/iasd-logo.jpeg`. El video de bienvenida se reproduce antes del contenido, se cierra al terminar y tiene un tiempo límite de 20 segundos.
+- **Identidad del sitio:** el encabezado muestra el logo IASD incluido en `assets/images/iasd-logo.jpeg`.
 - **Anuncio superior:** activa o desactiva el banner y ajusta texto, colores, velocidad y tamaño.
 - **Portada y botones:** configura la imagen, títulos, descripciones, etiquetas, enlaces y estilos de los dos CTA.
 - **Filosofía:** la sección con los valores de aprendizaje participativo se edita en `template-parts/philosophy.php`.

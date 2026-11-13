@@ -206,7 +206,7 @@ function centro_estudios_iasd_default( $setting ) {
 		'cta_visit_style'       => 'solid',
 		'cta_study_text'        => __( 'Conoce cómo estudiamos', 'centro-estudios-iasd' ),
 		'cta_study_url'         => '',
-		'cta_study_style'       => 'outline',
+		'cta_study_style'       => 'solid',
 		'footer_about'          => __( 'Somos una comunidad dedicada al estudio de la Biblia, el crecimiento espiritual y el servicio.', 'centro-estudios-iasd' ),
 		'footer_email'          => '',
 		'footer_phone'          => '',
