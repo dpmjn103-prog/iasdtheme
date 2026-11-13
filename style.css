@@ -3051,7 +3051,7 @@ button,
 	}
 
 	.hero__actions {
-		align-items: flex-start;
+		align-items: center;
 		flex-direction: column;
 	}
 
