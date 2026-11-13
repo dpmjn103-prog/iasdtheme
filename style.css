@@ -2844,6 +2844,14 @@ button,
 		width: min(calc(100% - 2rem), var(--content-width));
 	}
 
+	.hero::before {
+		background-position: 98% center;
+	}
+
+	.hero__actions {
+		justify-content: center;
+	}
+
 	.header-inner {
 		min-height: 4.7rem;
 		gap: 1rem;
@@ -3082,16 +3090,12 @@ button,
 		min-height: 36rem;
 	}
 
-	.hero::before {
-		background-position: 88% center;
-	}
-
 	.hero__content {
 		padding-block: 4rem;
 	}
 
 	.hero__actions {
-		align-items: flex-start;
+		align-items: center;
 		flex-direction: column;
 	}
 
