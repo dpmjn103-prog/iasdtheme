@@ -22,8 +22,4 @@
 			<p><?php esc_html_e( 'Contemplamos la inmensidad de la creación con la esperanza puesta en la promesa de su regreso.', 'centro-estudios-iasd' ); ?></p>
 		</div>
 	</div>
-	<p class="orion-feature__credit">
-		<?php esc_html_e( 'Nebulosa de Orión: ', 'centro-estudios-iasd' ); ?>
-		<a href="https://www.eso.org/public/images/eso1103a/" target="_blank" rel="noopener noreferrer"><?php esc_html_e( 'ESO/Igor Chekalin', 'centro-estudios-iasd' ); ?></a>
-	</p>
 </section>
