@@ -33,13 +33,13 @@ get_header();
 	</section>
 
 	<?php get_template_part( 'template-parts/philosophy' ); ?>
+	<?php get_template_part( 'template-parts/orion-nebula' ); ?>
 	<?php get_template_part( 'template-parts/study-method' ); ?>
 	<?php get_template_part( 'template-parts/sanctuary' ); ?>
 	<?php get_template_part( 'template-parts/testimonials' ); ?>
 	<?php get_template_part( 'template-parts/saturday-program' ); ?>
 	<?php get_template_part( 'template-parts/community-updates' ); ?>
 	<?php get_template_part( 'template-parts/gallery' ); ?>
-	<?php get_template_part( 'template-parts/orion-nebula' ); ?>
 
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : ?>
