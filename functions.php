@@ -271,7 +271,7 @@ function centro_estudios_iasd_customize_register( $wp_customize ) {
 		'announcement_text',
 		array(
 			'label'       => __( 'Texto del anuncio', 'centro-estudios-iasd' ),
-			'description' => __( 'El texto se desplaza verticalmente y se repite para mantener el movimiento continuo.', 'centro-estudios-iasd' ),
+			'description' => __( 'El texto se desplaza horizontalmente y se repite para mantener el movimiento continuo.', 'centro-estudios-iasd' ),
 			'section'     => 'centro_announcement',
 			'type'        => 'textarea',
 		)
