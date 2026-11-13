@@ -26,7 +26,7 @@ get_header();
 				$study_style = centro_estudios_iasd_sanitize_button_style( get_theme_mod( 'cta_study_style', centro_estudios_iasd_default( 'cta_study_style' ) ) );
 				if ( $study_text ) :
 					?>
-					<a class="button button--<?php echo esc_attr( $study_style ); ?>" href="<?php echo centro_estudios_iasd_cta_url( 'cta_study_url' ); ?>"><?php echo esc_html( $study_text ); ?></a>
+					<a class="button button--<?php echo esc_attr( $study_style ); ?> button--study" href="<?php echo centro_estudios_iasd_cta_url( 'cta_study_url' ); ?>"><?php echo esc_html( $study_text ); ?></a>
 				<?php endif; ?>
 			</div>
 		</div>

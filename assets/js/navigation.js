@@ -1,37 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-	const intro = document.querySelector(".site-intro");
-	const introVideo = intro ? intro.querySelector("video") : null;
-
-	if (intro && introVideo) {
-		let introClosed = false;
-		let introTimeout;
-
-		function closeIntro() {
-			if (introClosed) {
-				return;
-			}
-
-			introClosed = true;
-			window.clearTimeout(introTimeout);
-			introVideo.pause();
-			intro.classList.add("is-hidden");
-			document.body.classList.remove("site-intro-active");
-			window.setTimeout(function () {
-				intro.remove();
-			}, 500);
-		}
-
-		if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-			closeIntro();
-		} else {
-			document.body.classList.add("site-intro-active");
-			introVideo.addEventListener("ended", closeIntro, { once: true });
-			introVideo.addEventListener("error", closeIntro, { once: true });
-			introTimeout = window.setTimeout(closeIntro, 20000);
-			introVideo.play().catch(closeIntro);
-		}
-	}
-
 	const backToTop = document.querySelector(".back-to-top");
 
 	if (backToTop) {
