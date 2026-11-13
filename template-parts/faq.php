@@ -18,7 +18,7 @@
 				<p><?php esc_html_e( 'No. Todas las personas son bienvenidas, incluso si nunca han abierto una Biblia. Puedes aprender, preguntar y participar a tu propio ritmo.', 'centro-estudios-iasd' ); ?></p>
 			</details>
 			<details class="faq-item">
-				<summary><?php esc_html_e( '¿Cómo es un sábado en el Centro de Estudio?', 'centro-estudios-iasd' ); ?></summary>
+				<summary><?php esc_html_e( '¿Cómo es un Sábado en el Centro de Estudio?', 'centro-estudios-iasd' ); ?></summary>
 				<p><?php esc_html_e( 'Comenzamos a las 9:30 AM con una bienvenida y estudio participativo. También compartimos un almuerzo y, por la tarde, tenemos un tema especial.', 'centro-estudios-iasd' ); ?></p>
 			</details>
 			<details class="faq-item">
@@ -29,7 +29,7 @@
 			</details>
 			<details class="faq-item">
 				<summary><?php esc_html_e( '¿Dónde se reúnen y cuál es el horario?', 'centro-estudios-iasd' ); ?></summary>
-				<p><?php esc_html_e( 'Nos reunimos los sábados de 9:30 AM a 6:00 PM en 3ª Avenida, Ciudad de Guatemala, Zona 10.', 'centro-estudios-iasd' ); ?>
+				<p><?php esc_html_e( 'Nos reunimos los Sábados de 9:30 AM a 6:00 PM en 3ª Avenida, Ciudad de Guatemala, Zona 10.', 'centro-estudios-iasd' ); ?>
 					<a href="<?php echo esc_url( home_url( '/#ubicacion' ) ); ?>"><?php esc_html_e( 'Ver ubicación y mapa', 'centro-estudios-iasd' ); ?></a>
 				</p>
 			</details>

@@ -9,8 +9,8 @@
 	<div class="saturday-program__inner">
 		<div class="saturday-program__layout">
 			<header class="saturday-program__heading">
-				<p class="saturday-program__eyebrow"><?php esc_html_e( 'Cada sábado', 'centro-estudios-iasd' ); ?></p>
-				<h2 id="saturday-program-title"><?php esc_html_e( 'Programa de los sábados', 'centro-estudios-iasd' ); ?></h2>
+				<p class="saturday-program__eyebrow"><?php esc_html_e( 'Cada Sábado', 'centro-estudios-iasd' ); ?></p>
+				<h2 id="saturday-program-title"><?php esc_html_e( 'Programa de los Sábados', 'centro-estudios-iasd' ); ?></h2>
 				<p><?php esc_html_e( 'Una mañana pensada para aprender, conversar y compartir la mesa.', 'centro-estudios-iasd' ); ?></p>
 				<div class="saturday-program__art" aria-hidden="true">
 					<svg viewBox="0 0 480 300" preserveAspectRatio="xMidYMid slice" focusable="false">

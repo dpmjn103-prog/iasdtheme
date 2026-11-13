@@ -14,7 +14,7 @@ $map_link_url     = 'https://www.google.com/maps/place/Iglesia+Adventista+Centro
 	<div class="location-section__inner">
 		<header class="location-section__heading">
 			<p class="eyebrow"><?php esc_html_e( 'Nos encantará recibirte', 'centro-estudios-iasd' ); ?></p>
-			<h2 id="location-title"><?php esc_html_e( 'Visítanos este sábado', 'centro-estudios-iasd' ); ?></h2>
+			<h2 id="location-title"><?php esc_html_e( 'Visítanos este Sábado', 'centro-estudios-iasd' ); ?></h2>
 			<p><?php esc_html_e( 'Ven a compartir, aprender y crecer en comunidad. Aquí tienes todo lo que necesitas para encontrarnos.', 'centro-estudios-iasd' ); ?></p>
 		</header>
 		<div class="location-section__layout">
