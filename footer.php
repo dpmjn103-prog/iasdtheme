@@ -64,7 +64,7 @@
 			</section>
 
 			<section class="footer-column" aria-labelledby="footer-verse-title">
-				<h2 id="footer-verse-title"><?php esc_html_e( 'Una palabra puntual:', 'centro-estudios-iasd' ); ?></h2>
+				<h2 id="footer-verse-title"><?php esc_html_e( 'Para meditar:', 'centro-estudios-iasd' ); ?></h2>
 				<blockquote class="footer-verse">
 					<p><?php echo esc_html( get_theme_mod( 'footer_verse', centro_estudios_iasd_default( 'footer_verse' ) ) ); ?></p>
 					<cite><?php echo esc_html( get_theme_mod( 'footer_verse_reference', centro_estudios_iasd_default( 'footer_verse_reference' ) ) ); ?></cite>
