@@ -55,6 +55,15 @@ $map_link_url     = 'https://www.google.com/maps/place/Iglesia+Adventista+Centro
 						<p><?php esc_html_e( 'Sábados de 9:30 AM a 6:00 PM', 'centro-estudios-iasd' ); ?></p>
 					</div>
 				</article>
+				<article class="location-card">
+					<span class="location-card__icon" aria-hidden="true">
+						<svg viewBox="0 0 24 24" focusable="false"><path d="M7 3h7a5 5 0 0 1 0 10h-4v8H7V3Zm3 3v4h4a2 2 0 1 0 0-4h-4Z" /></svg>
+					</span>
+					<div>
+						<h3><?php esc_html_e( 'Parqueo', 'centro-estudios-iasd' ); ?></h3>
+						<p><?php esc_html_e( 'El parqueo se encuentra frente a la iglesia.', 'centro-estudios-iasd' ); ?></p>
+					</div>
+				</article>
 				<a class="button button--solid location-section__directions" href="<?php echo esc_url( $map_link_url ); ?>" target="_blank" rel="noopener noreferrer">
 					<?php esc_html_e( 'Cómo llegar con Google Maps', 'centro-estudios-iasd' ); ?>
 					<span aria-hidden="true">↗</span>
