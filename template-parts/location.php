@@ -65,14 +65,16 @@ $waze_link_url    = 'https://waze.com/ul?ll=' . $location_query . '&navigate=yes
 						<p><?php esc_html_e( 'El parqueo se encuentra frente a la iglesia.', 'centro-estudios-iasd' ); ?></p>
 					</div>
 				</article>
-				<a class="button button--solid location-section__directions" href="<?php echo esc_url( $map_link_url ); ?>" target="_blank" rel="noopener noreferrer">
-					<?php esc_html_e( 'Cómo llegar con Google Maps', 'centro-estudios-iasd' ); ?>
-					<span aria-hidden="true">↗</span>
-				</a>
-				<a class="button button--solid location-section__directions" href="<?php echo esc_url( $waze_link_url ); ?>" target="_blank" rel="noopener noreferrer">
-					<?php esc_html_e( 'Cómo llegar con Waze', 'centro-estudios-iasd' ); ?>
-					<span aria-hidden="true">↗</span>
-				</a>
+				<div class="location-section__directions-actions">
+					<a class="button button--solid location-section__directions" href="<?php echo esc_url( $map_link_url ); ?>" target="_blank" rel="noopener noreferrer">
+						<?php esc_html_e( 'Cómo llegar con Google Maps', 'centro-estudios-iasd' ); ?>
+						<span aria-hidden="true">↗</span>
+					</a>
+					<a class="button button--solid location-section__directions" href="<?php echo esc_url( $waze_link_url ); ?>" target="_blank" rel="noopener noreferrer">
+						<?php esc_html_e( 'Cómo llegar con Waze', 'centro-estudios-iasd' ); ?>
+						<span aria-hidden="true">↗</span>
+					</a>
+				</div>
 			</div>
 			<div class="location-map">
 				<iframe
