@@ -9,6 +9,7 @@ $location_address = __( '3ª Avenida 16-39, Zona 10, Guatemala. A las cercanías
 $location_query   = rawurlencode( '14.5945581,-90.5144678' );
 $map_embed_url    = 'https://maps.google.com/maps?q=' . $location_query . '&output=embed';
 $map_link_url     = 'https://www.google.com/maps/place/Iglesia+Adventista+Centro+de+Estudio/@14.594558,-90.514468,1459m/data=!3m1!1e3!4m12!1m5!3m4!2zMTTCsDM1JzQwLjQiTiA5MMKwMzAnNTIuMSJX!8m2!3d14.5945581!4d-90.5144678!3m5!1s0x8589a30046d59307:0x54548a7be7873091!8m2!3d14.5945581!4d-90.5144678!16s%2Fg%2F11zbnpn319?hl=es-US&entry=ttu&g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D';
+$waze_link_url    = 'https://waze.com/ul?ll=' . $location_query . '&navigate=yes';
 ?>
 <section class="location-section" id="ubicacion" aria-labelledby="location-title">
 	<div class="location-section__inner">
@@ -66,6 +67,10 @@ $map_link_url     = 'https://www.google.com/maps/place/Iglesia+Adventista+Centro
 				</article>
 				<a class="button button--solid location-section__directions" href="<?php echo esc_url( $map_link_url ); ?>" target="_blank" rel="noopener noreferrer">
 					<?php esc_html_e( 'Cómo llegar con Google Maps', 'centro-estudios-iasd' ); ?>
+					<span aria-hidden="true">↗</span>
+				</a>
+				<a class="button button--solid location-section__directions" href="<?php echo esc_url( $waze_link_url ); ?>" target="_blank" rel="noopener noreferrer">
+					<?php esc_html_e( 'Cómo llegar con Waze', 'centro-estudios-iasd' ); ?>
 					<span aria-hidden="true">↗</span>
 				</a>
 			</div>
