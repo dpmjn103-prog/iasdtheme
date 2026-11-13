@@ -458,7 +458,7 @@ function centro_estudios_iasd_customize_register( $wp_customize ) {
 		'footer_facebook'        => array( __( 'Enlace a Facebook', 'centro-estudios-iasd' ), 'url' ),
 		'footer_instagram'       => array( __( 'Enlace a Instagram', 'centro-estudios-iasd' ), 'url' ),
 		'footer_youtube'         => array( __( 'Enlace a YouTube', 'centro-estudios-iasd' ), 'url' ),
-		'footer_verse'           => array( __( 'Verso bíblico', 'centro-estudios-iasd' ), 'textarea' ),
+		'footer_verse'           => array( __( 'Verso Bíblico', 'centro-estudios-iasd' ), 'textarea' ),
 		'footer_verse_reference' => array( __( 'Referencia del verso', 'centro-estudios-iasd' ), 'text' ),
 	);
 	foreach ( $footer_fields as $setting => $field ) {

@@ -10,7 +10,7 @@
 		<header class="sanctuary-section__heading">
 			<p class="sanctuary-section__eyebrow"><?php esc_html_e( 'Creemos en', 'centro-estudios-iasd' ); ?></p>
 			<h2 id="sanctuary-title"><?php esc_html_e( 'El santuario: una imagen del plan de salvación', 'centro-estudios-iasd' ); ?></h2>
-			<p><?php esc_html_e( 'Para la fe adventista, el santuario bíblico ayuda a comprender cómo Jesús ofrece su vida por nosotros y hoy intercede por la humanidad en el santuario celestial.', 'centro-estudios-iasd' ); ?></p>
+			<p><?php esc_html_e( 'Para la fe adventista, el santuario Bíblico ayuda a comprender cómo Jesús ofrece su vida por nosotros y hoy intercede por la humanidad en el santuario celestial.', 'centro-estudios-iasd' ); ?></p>
 		</header>
 
 		<div class="sanctuary-section__stages">
@@ -50,7 +50,7 @@
 		</aside>
 
 		<details class="sanctuary-scriptures">
-			<summary><?php esc_html_e( 'Citas bíblicas', 'centro-estudios-iasd' ); ?></summary>
+			<summary><?php esc_html_e( 'Citas Bíblicas', 'centro-estudios-iasd' ); ?></summary>
 			<div class="sanctuary-scriptures__content">
 				<blockquote>
 					<cite><?php esc_html_e( 'Y él dijo: Hasta dos mil trescientas tardes y mañanas; luego el santuario será purificado. Daniel 8:14 (RVR1960). ', 'centro-estudios-iasd' ); ?></cite>
