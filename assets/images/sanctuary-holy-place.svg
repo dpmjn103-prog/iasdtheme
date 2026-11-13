@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
 	<title id="title">El lugar santo</title>
-	<desc id="desc">Ilustración editorial del interior del santuario con el candelabro, la mesa del pan y el altar del incienso.</desc>
+	<desc id="desc">Ilustración editorial del interior del Santuario con el candelabro, la mesa del pan y el altar del incienso.</desc>
 	<defs>
 		<linearGradient id="interior" x2="0" y2="1">
 			<stop stop-color="#1b3148"/>

@@ -9,13 +9,13 @@
 	<div class="sanctuary-section__inner">
 		<header class="sanctuary-section__heading">
 			<p class="sanctuary-section__eyebrow"><?php esc_html_e( 'Creemos en', 'centro-estudios-iasd' ); ?></p>
-			<h2 id="sanctuary-title"><?php esc_html_e( 'El santuario: una imagen del plan de salvación', 'centro-estudios-iasd' ); ?></h2>
-			<p><?php esc_html_e( 'Para la fe adventista, el santuario Bíblico ayuda a comprender cómo Jesús ofrece su vida por nosotros y hoy intercede por la humanidad en el santuario celestial.', 'centro-estudios-iasd' ); ?></p>
+			<h2 id="sanctuary-title"><?php esc_html_e( 'El Santuario: una imagen del plan de salvación', 'centro-estudios-iasd' ); ?></h2>
+			<p><?php esc_html_e( 'Para la fe adventista, el Santuario Bíblico ayuda a comprender cómo Jesús ofrece su vida por nosotros y hoy intercede por la humanidad en el Santuario celestial.', 'centro-estudios-iasd' ); ?></p>
 		</header>
 
 		<div class="sanctuary-section__stages">
 			<article class="sanctuary-stage">
-				<img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/sanctuary-court.svg' ) . '?ver=' . CENTRO_ESTUDIOS_IASD_VERSION ); ?>" alt="<?php esc_attr_e( 'Ilustración del atrio del santuario con altar y fuente', 'centro-estudios-iasd' ); ?>" loading="lazy" decoding="async">
+				<img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/sanctuary-court.svg' ) . '?ver=' . CENTRO_ESTUDIOS_IASD_VERSION ); ?>" alt="<?php esc_attr_e( 'Ilustración del atrio del Santuario con altar y fuente', 'centro-estudios-iasd' ); ?>" loading="lazy" decoding="async">
 				<div class="sanctuary-stage__copy">
 					<p class="sanctuary-stage__number"><?php esc_html_e( '01 · El atrio', 'centro-estudios-iasd' ); ?></p>
 					<h3><?php esc_html_e( 'El sacrificio', 'centro-estudios-iasd' ); ?></h3>
@@ -46,20 +46,20 @@
 			<span class="sanctuary-section__hope-mark" aria-hidden="true">
 				<svg viewBox="0 0 24 24" focusable="false"><path d="m12 2.8 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 2.8Z" /></svg>
 			</span>
-			<p><strong><?php esc_html_e( 'Nuestra esperanza es Jesús.', 'centro-estudios-iasd' ); ?></strong> <?php esc_html_e( 'Como adventistas, estudiamos el santuario porque sus símbolos y servicios revelan el plan de salvación y el ministerio de Jesús como nuestro Sumo Sacerdote. Comprenderlo fortalece nuestra confianza en su gracia y nuestra esperanza en su regreso.', 'centro-estudios-iasd' ); ?></p>
+			<p><strong><?php esc_html_e( 'Nuestra esperanza es Jesús.', 'centro-estudios-iasd' ); ?></strong> <?php esc_html_e( 'Como adventistas, estudiamos el Santuario porque sus símbolos y servicios revelan el plan de salvación y el ministerio de Jesús como nuestro Sumo Sacerdote. Comprenderlo fortalece nuestra confianza en su gracia y nuestra esperanza en su regreso.', 'centro-estudios-iasd' ); ?></p>
 		</aside>
 
 		<details class="sanctuary-scriptures">
 			<summary><?php esc_html_e( 'Citas Bíblicas', 'centro-estudios-iasd' ); ?></summary>
 			<div class="sanctuary-scriptures__content">
 				<blockquote>
-					<cite><?php esc_html_e( 'Y él dijo: Hasta dos mil trescientas tardes y mañanas; luego el santuario será purificado. Daniel 8:14 (RVR1960). ', 'centro-estudios-iasd' ); ?></cite>
+					<cite><?php esc_html_e( 'Y él dijo: Hasta dos mil trescientas tardes y mañanas; luego el Santuario será purificado. Daniel 8:14 (RVR1960). ', 'centro-estudios-iasd' ); ?></cite>
 				</blockquote>
 				<blockquote>
 					<cite><?php esc_html_e( 'Por tanto, teniendo un gran sumo sacerdote que traspasó los cielos, Jesús el Hijo de Dios, retengamos nuestra profesión. Porque no tenemos un sumo sacerdote que no pueda compadecerse de nuestras debilidades, sino uno que fue tentado en todo según nuestra semejanza, pero sin pecado. Acerquémonos, pues, confiadamente al trono de la gracia, para alcanzar misericordia y hallar gracia para el oportuno socorro. Hebreos 4:14–16 (RVR1960).', 'centro-estudios-iasd' ); ?></cite>
 				</blockquote>
 				<blockquote>
-					<cite><?php esc_html_e( 'Ahora bien, el punto principal de lo que venimos diciendo es que tenemos tal sumo sacerdote, el cual se sentó a la diestra del trono de la Majestad en los cielos, ministro del santuario, y de aquel verdadero tabernáculo que levantó el Señor, y no el hombre. Hebreos 8:1–2 (RVR1960).', 'centro-estudios-iasd' ); ?></cite>
+					<cite><?php esc_html_e( 'Ahora bien, el punto principal de lo que venimos diciendo es que tenemos tal sumo sacerdote, el cual se sentó a la diestra del trono de la Majestad en los cielos, ministro del Santuario, y de aquel verdadero tabernáculo que levantó el Señor, y no el hombre. Hebreos 8:1–2 (RVR1960).', 'centro-estudios-iasd' ); ?></cite>
 				</blockquote>
 			</div>
 		</details>
